@@ -7,7 +7,7 @@
 // Copyright 2018 LY David. All rights reserved
 
 import UIKit
-//import AudioKit
+import AudioKit
 
 class ViewController: UIViewController {
 
@@ -17,9 +17,9 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 	}
     
-//    override var shouldAutorotate: Bool {
-//        return false
-//    }
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }
 
