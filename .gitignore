@@ -1,3 +1,5 @@
 AudioKit-iOS/*
 AudioKit-iOS/
 .DS_Store
+SeizeTheMuse.xcodeproj/xcuserdata/*.xcuserdatad
+SeizeTheMuse.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdata
