@@ -9,7 +9,7 @@
 import UIKit
 import AudioKit
 
-class ViewController: UIViewController {
+class LoginController: UIViewController {
 
 	override func viewWillDisappear(_ animated : Bool) {
 		super.viewWillDisappear(animated)
