@@ -12,6 +12,10 @@
 		0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFF51621AC00D000266CBF /* ViewController.swift */; };
 		B2D734EB21AC8DE500BB7EC2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D734EA21AC8DE500BB7EC2 /* ProfileViewController.swift */; };
 		B2D734ED21AC8E0100BB7EC2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D734EC21AC8E0100BB7EC2 /* RegisterViewController.swift */; };
+		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
+		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
+		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
+		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 		B2E8258B21A44D2B00E924ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258A21A44D2B00E924ED /* User.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
 		B2E8258F21A44FCB00E924ED /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258E21A44FCB00E924ED /* Note.swift */; };
@@ -57,7 +61,10 @@
 
 /* Begin PBXFileReference section */
 		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
-		0BAFF51621AC00D000266CBF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
+		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		B2D734EA21AC8DE500BB7EC2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B2D734EC21AC8E0100BB7EC2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +145,10 @@
 		B2EDB41521A313700094CB44 /* SeizeTheMuse */ = {
 			isa = PBXGroup;
 			children = (
+				8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */,
+				8241EFFC21AD5DB600058C3F /* LoginController.swift */,
+				8241EFFE21AD5DB600058C3F /* ProfilController.swift */,
+				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
 				B2EDB41621A313700094CB44 /* AppDelegate.swift */,
 				B2EDB41A21A313700094CB44 /* Main.storyboard */,
 				B2D734EC21AC8E0100BB7EC2 /* RegisterViewController.swift */,
@@ -146,7 +157,6 @@
 				B2EDB41F21A313710094CB44 /* LaunchScreen.storyboard */,
 				B2EDB42221A313710094CB44 /* Info.plist */,
 				B2E8258A21A44D2B00E924ED /* User.swift */,
-				0BAFF51621AC00D000266CBF /* ViewController.swift */,
 				B2E8258C21A44F4200E924ED /* Song.swift */,
 				B2E8258E21A44FCB00E924ED /* Note.swift */,
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
@@ -278,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EDB42121A313710094CB44 /* LaunchScreen.storyboard in Resources */,
+				8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */,
 				B2EDB41E21A313710094CB44 /* Assets.xcassets in Resources */,
 				B2EDB41C21A313700094CB44 /* Main.storyboard in Resources */,
 			);
@@ -305,13 +316,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E8258F21A44FCB00E924ED /* Note.swift in Sources */,
+				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
 				B2E8258D21A44F4200E924ED /* Song.swift in Sources */,
+				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
 				B2D734ED21AC8E0100BB7EC2 /* RegisterViewController.swift in Sources */,
 				0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */,
 				B2D734EB21AC8DE500BB7EC2 /* ProfileViewController.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
 				B2E8258B21A44D2B00E924ED /* User.swift in Sources */,
+				8241F00021AD5DB600058C3F /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

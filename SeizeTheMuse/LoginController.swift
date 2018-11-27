@@ -9,10 +9,13 @@
 import UIKit
 import AudioKit
 
-class ViewController: UIViewController {
+class LoginController: UIViewController {
 
-
-
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
+        return .lightContent
+    }
+    
  	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
@@ -20,6 +23,5 @@ class ViewController: UIViewController {
     override var shouldAutorotate: Bool {
         return false
     }
-
 }
 
