@@ -11,13 +11,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
-
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
+        return .lightContent
+    }
+    
  	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
     
-//    override var shouldAutorotate: Bool {
+//    override var shouldAuçtorotate: Bool {
 //        return false
 //    }
 
