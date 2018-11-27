@@ -647,20 +647,10 @@
             <point key="canvasLocation" x="3361" y="-257"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+    <!--<inferredMetricsTieBreakers>
         <segue reference="rEf-5B-h5Y"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         <segue reference="NMs-le-bpz"/>
->>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
         <segue reference="vYG-bg-vAy"/>
-=======
         <segue reference="MFa-a7-b61"/>
->>>>>>> parent of f21591d... commit add
-=======
-        <segue reference="MFa-a7-b61"/>
->>>>>>> parent of f21591d... commit add
-    </inferredMetricsTieBreakers>
+    </inferredMetricsTieBreakers>-->
 </document>
