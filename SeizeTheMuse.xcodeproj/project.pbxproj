@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; };
 		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
+>>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
+=======
+		0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFF51621AC00D000266CBF /* ViewController.swift */; };
+>>>>>>> parent of f21591d... commit add
+=======
+		0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFF51621AC00D000266CBF /* ViewController.swift */; };
+>>>>>>> parent of f21591d... commit add
 		B2E8258B21A44D2B00E924ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258A21A44D2B00E924ED /* User.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
 		B2E8258F21A44FCB00E924ED /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258E21A44FCB00E924ED /* Note.swift */; };
@@ -58,10 +69,21 @@
 
 /* Begin PBXFileReference section */
 		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+>>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
+=======
+		0BAFF51621AC00D000266CBF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+>>>>>>> parent of f21591d... commit add
+=======
+		0BAFF51621AC00D000266CBF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+>>>>>>> parent of f21591d... commit add
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		B2E8258A21A44D2B00E924ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2E8258C21A44F4200E924ED /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
@@ -150,6 +172,7 @@
 				B2EDB41F21A313710094CB44 /* LaunchScreen.storyboard */,
 				B2EDB42221A313710094CB44 /* Info.plist */,
 				B2E8258A21A44D2B00E924ED /* User.swift */,
+				0BAFF51621AC00D000266CBF /* ViewController.swift */,
 				B2E8258C21A44F4200E924ED /* Song.swift */,
 				B2E8258E21A44FCB00E924ED /* Note.swift */,
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
@@ -313,6 +336,7 @@
 				B2E8258D21A44F4200E924ED /* Song.swift in Sources */,
 				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
+				0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
 				B2E8258B21A44D2B00E924ED /* User.swift in Sources */,
 				8241F00021AD5DB600058C3F /* LoginController.swift in Sources */,
