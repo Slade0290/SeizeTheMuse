@@ -11,12 +11,16 @@
 		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 >>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
+=======
+		0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFF51621AC00D000266CBF /* ViewController.swift */; };
+>>>>>>> parent of f21591d... commit add
 =======
 		0BAFF51721AC00D000266CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFF51621AC00D000266CBF /* ViewController.swift */; };
 >>>>>>> parent of f21591d... commit add
@@ -67,12 +71,16 @@
 		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 >>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
+=======
+		0BAFF51621AC00D000266CBF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+>>>>>>> parent of f21591d... commit add
 =======
 		0BAFF51621AC00D000266CBF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 >>>>>>> parent of f21591d... commit add
