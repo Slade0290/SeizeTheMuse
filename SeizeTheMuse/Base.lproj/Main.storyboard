@@ -571,7 +571,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-KW-0Q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="484"/>
+            <point key="canvasLocation" x="2545" y="475"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1xR-ZJ-QLQ">
@@ -650,9 +650,13 @@
     <inferredMetricsTieBreakers>
 <<<<<<< HEAD
         <segue reference="rEf-5B-h5Y"/>
+<<<<<<< HEAD
 =======
         <segue reference="NMs-le-bpz"/>
 >>>>>>> 47c094b392c4bf782d77f0a89df9399c3a96fd43
         <segue reference="vYG-bg-vAy"/>
+=======
+        <segue reference="MFa-a7-b61"/>
+>>>>>>> parent of f21591d... commit add
     </inferredMetricsTieBreakers>
 </document>
