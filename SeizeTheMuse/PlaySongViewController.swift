@@ -14,6 +14,7 @@ class PlaySongViewController : UIViewController {
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
+    var songPlaying: Song!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,17 @@ class PlaySongViewController : UIViewController {
         }
         catch {
             AKLog("AudioKit did not start !")
+        }
+    }
+    @objc func updateUI() {
+        if tracker.amplitude > 0.1 {
+            var i: Int = 0
+            while i < songPlaying.listOfNotes.count {
+                var frequency = Double(tracker.frequency)
+                if frequency == songPlaying.listOfNotes[i].frequence {
+                    i += 1
+                }
+            }
         }
     }
 }
