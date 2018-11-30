@@ -742,8 +742,10 @@
             <point key="canvasLocation" x="3361" y="-257"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
+    <!--<inferredMetricsTieBreakers>
+        <segue reference="rEf-5B-h5Y"/>
         <segue reference="NMs-le-bpz"/>
         <segue reference="vYG-bg-vAy"/>
-    </inferredMetricsTieBreakers>
+        <segue reference="MFa-a7-b61"/>
+    </inferredMetricsTieBreakers>-->
 </document>
