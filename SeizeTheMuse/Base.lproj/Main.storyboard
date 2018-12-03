@@ -31,7 +31,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="t6Z-hS-7YJ" kind="show" id="vYG-bg-vAy"/>
+                                    <segue destination="t6Z-hS-7YJ" kind="show" id="NN6-Zp-CiB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FK-3j-mFe">
@@ -60,7 +60,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="r5d-p3-OoY" kind="show" id="JgE-tq-UrP"/>
+                                    <segue destination="r5d-p3-OoY" kind="show" id="4gx-HJ-jEw"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="if7-E8-F8g">
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-144.80000000000001" y="-257.72113943028489"/>
+            <point key="canvasLocation" x="-239" y="475"/>
         </scene>
         <!--Subscribe Controller-->
         <scene sceneID="nuj-nv-XpG">
@@ -137,7 +137,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="97j-8X-tuZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="RN1-Dh-Jyc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxC-XJ-paa">
@@ -237,6 +237,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="t6Z-hS-7YJ" kind="show" id="0OQ-Co-Lhg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcl-dZ-7yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="-256"/>
+            <point key="canvasLocation" x="1396" y="732"/>
         </scene>
         <!--Profil Controller-->
         <scene sceneID="7g3-vU-Pnx">
@@ -319,7 +322,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="LS6-eu-7TE" kind="show" id="NMs-le-bpz"/>
+                                    <segue destination="LS6-eu-7TE" kind="showDetail" id="d7g-2E-lG4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F45-AW-h9H">
@@ -348,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weW-JQ-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663.125" y="-256.6901408450704"/>
+            <point key="canvasLocation" x="601" y="-22"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eIl-OU-5EY">
@@ -647,10 +650,8 @@
             <point key="canvasLocation" x="3361" y="-257"/>
         </scene>
     </scenes>
-    <!--<inferredMetricsTieBreakers>
+    <inferredMetricsTieBreakers>
         <segue reference="rEf-5B-h5Y"/>
-        <segue reference="NMs-le-bpz"/>
-        <segue reference="vYG-bg-vAy"/>
-        <segue reference="MFa-a7-b61"/>
-    </inferredMetricsTieBreakers>-->
+        <segue reference="NN6-Zp-CiB"/>
+    </inferredMetricsTieBreakers>
 </document>
