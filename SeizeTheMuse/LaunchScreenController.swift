@@ -1,25 +1,25 @@
 //
-//  ProfilController.swift
+//  LaunchScreenController.swift
 //  SeizeTheMuse
 //
-//  Created by Clement on 26/11/2018.
+//  Created by Bastien EL GANA on 03/12/2018.
 //  Copyright © 2018 LY David. All rights reserved.
 //
 
 import UIKit
 
-class ProfilController: UIViewController {
+class LaunchScreenController: UIViewController {
 
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle
-    {
-        return .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            Thread.sleep(forTimeInterval: 3.0)
+            // Override point for customization after application launch.
+            return true
+        }
     }
     
 
