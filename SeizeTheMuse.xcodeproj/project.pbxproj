@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */; };
+		0445C9DE21B6BFE800697D09 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9DD21B6BFE800697D09 /* AudioKit.framework */; };
+		0445C9DF21B6BFE800697D09 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9DD21B6BFE800697D09 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; };
+		0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
-		0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; };
-		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
@@ -50,7 +53,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */,
+				0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */,
+				0445C9DF21B6BFE800697D09 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,8 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionViewController.swift; sourceTree = "<group>"; };
+		0445C9DD21B6BFE800697D09 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		0445C9E021B6C01900697D09 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
-		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
@@ -88,7 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */,
+				0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */,
+				0445C9DE21B6BFE800697D09 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +127,8 @@
 		B2EDB40A21A313700094CB44 = {
 			isa = PBXGroup;
 			children = (
-				0B28560A21A608FF00D060D8 /* AudioKit.framework */,
+				0445C9E021B6C01900697D09 /* AudioKitUI.framework */,
+				0445C9DD21B6BFE800697D09 /* AudioKit.framework */,
 				B2EDB41521A313700094CB44 /* SeizeTheMuse */,
 				B2EDB42A21A313710094CB44 /* SeizeTheMuseTests */,
 				B2EDB43521A313710094CB44 /* SeizeTheMuseUITests */,
@@ -156,6 +164,7 @@
 				B2E8258E21A44FCB00E924ED /* Note.swift */,
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
 				0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */,
+				0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */,
 			);
 			path = SeizeTheMuse;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
+				0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */,
 				B2E8258B21A44D2B00E924ED /* User.swift in Sources */,
 				8241F00021AD5DB600058C3F /* LoginController.swift in Sources */,
 			);

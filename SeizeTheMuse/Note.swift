@@ -11,10 +11,10 @@ import Foundation
 struct Note {
     
     let name : String
-    let frequence : Double
+    let frequence : Float
     let altered : Bool
     
-    init(name : String, frequence : Double, altered : Bool) {
+    init(name : String, frequence : Float, altered : Bool) {
         self.name = name
         self.frequence = frequence
         self.altered = altered
