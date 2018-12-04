@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
 		0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; };
 		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
+		4868D95E2F46503045F49BEF /* Pods_SeizeTheMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BC60B76FF2456E1C98138C /* Pods_SeizeTheMuseUITests.framework */; };
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
+		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
 		B2E8258B21A44D2B00E924ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258A21A44D2B00E924ED /* User.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
 		B2E8258F21A44FCB00E924ED /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258E21A44FCB00E924ED /* Note.swift */; };
@@ -24,6 +26,7 @@
 		B2EDB42121A313710094CB44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EDB41F21A313710094CB44 /* LaunchScreen.storyboard */; };
 		B2EDB42C21A313710094CB44 /* SeizeTheMuseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EDB42B21A313710094CB44 /* SeizeTheMuseTests.swift */; };
 		B2EDB43721A313710094CB44 /* SeizeTheMuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EDB43621A313710094CB44 /* SeizeTheMuseUITests.swift */; };
+		F96378D2E4CB7EF201914740 /* Pods_SeizeTheMuseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C94A4589FF4D0AFC0F4D98 /* Pods_SeizeTheMuseTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +61,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseTests/Pods-SeizeTheMuseTests.release.xcconfig"; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
-		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24A454B7B19BB36796AC527E /* Pods-SeizeTheMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse.debug.xcconfig"; sourceTree = "<group>"; };
+		6F2EB95C8E7377B0792F8403 /* Pods-SeizeTheMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseUITests/Pods-SeizeTheMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7988A48D753C00CB18133CDD /* Pods-SeizeTheMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuse.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse.release.xcconfig"; sourceTree = "<group>"; };
+		7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeizeTheMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BC60B76FF2456E1C98138C /* Pods_SeizeTheMuseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeizeTheMuseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		B2E8258A21A44D2B00E924ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2E8258C21A44F4200E924ED /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
@@ -81,6 +90,9 @@
 		B2EDB43221A313710094CB44 /* SeizeTheMuseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeizeTheMuseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EDB43621A313710094CB44 /* SeizeTheMuseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeizeTheMuseUITests.swift; sourceTree = "<group>"; };
 		B2EDB43821A313710094CB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A3A9144969C5BC9DC9363B /* Pods-SeizeTheMuseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseTests/Pods-SeizeTheMuseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C94A4589FF4D0AFC0F4D98 /* Pods_SeizeTheMuseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeizeTheMuseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C8BD1F30E0289AAFD25528 /* Pods-SeizeTheMuseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseUITests/Pods-SeizeTheMuseUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */,
+				055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96378D2E4CB7EF201914740 /* Pods_SeizeTheMuseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,16 +117,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4868D95E2F46503045F49BEF /* Pods_SeizeTheMuseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126007D9A7561E6A1671CDED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24A454B7B19BB36796AC527E /* Pods-SeizeTheMuse.debug.xcconfig */,
+				7988A48D753C00CB18133CDD /* Pods-SeizeTheMuse.release.xcconfig */,
+				B3A3A9144969C5BC9DC9363B /* Pods-SeizeTheMuseTests.debug.xcconfig */,
+				0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */,
+				6F2EB95C8E7377B0792F8403 /* Pods-SeizeTheMuseUITests.debug.xcconfig */,
+				E7C8BD1F30E0289AAFD25528 /* Pods-SeizeTheMuseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B2C3A44121A3183A00607B5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B2C3A44221A3183A00607B5A /* AudioKit.framework */,
+				7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */,
+				E0C94A4589FF4D0AFC0F4D98 /* Pods_SeizeTheMuseTests.framework */,
+				81BC60B76FF2456E1C98138C /* Pods_SeizeTheMuseUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 				B2EDB43521A313710094CB44 /* SeizeTheMuseUITests */,
 				B2EDB41421A313700094CB44 /* Products */,
 				B2C3A44121A3183A00607B5A /* Frameworks */,
+				126007D9A7561E6A1671CDED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +174,7 @@
 		B2EDB41521A313700094CB44 /* SeizeTheMuse */ = {
 			isa = PBXGroup;
 			children = (
-				8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */,
+				82D9198921B6925D008A0154 /* GoogleService-Info.plist */,
 				8241EFFC21AD5DB600058C3F /* LoginController.swift */,
 				8241EFFE21AD5DB600058C3F /* ProfilController.swift */,
 				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
@@ -185,10 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EDB43B21A313710094CB44 /* Build configuration list for PBXNativeTarget "SeizeTheMuse" */;
 			buildPhases = (
+				FFFD55C39C81F204B4B476E0 /* [CP] Check Pods Manifest.lock */,
 				B2EDB40F21A313700094CB44 /* Sources */,
 				B2EDB41021A313700094CB44 /* Frameworks */,
 				B2EDB41121A313700094CB44 /* Resources */,
 				B2C3A44021A3150300607B5A /* Embed Frameworks */,
+				4D0FBF9706A669FE7DF6D7C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EDB43E21A313710094CB44 /* Build configuration list for PBXNativeTarget "SeizeTheMuseTests" */;
 			buildPhases = (
+				E32889B993BAC097F66B7A85 /* [CP] Check Pods Manifest.lock */,
 				B2EDB42321A313710094CB44 /* Sources */,
 				B2EDB42421A313710094CB44 /* Frameworks */,
 				B2EDB42521A313710094CB44 /* Resources */,
@@ -221,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2EDB44121A313710094CB44 /* Build configuration list for PBXNativeTarget "SeizeTheMuseUITests" */;
 			buildPhases = (
+				E9F81CD97B38CFD286B2CCEF /* [CP] Check Pods Manifest.lock */,
 				B2EDB42E21A313710094CB44 /* Sources */,
 				B2EDB42F21A313710094CB44 /* Frameworks */,
 				B2EDB43021A313710094CB44 /* Resources */,
@@ -284,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EDB42121A313710094CB44 /* LaunchScreen.storyboard in Resources */,
-				8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */,
+				82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */,
 				B2EDB41E21A313710094CB44 /* Assets.xcassets in Resources */,
 				B2EDB41C21A313700094CB44 /* Main.storyboard in Resources */,
 			);
@@ -305,6 +341,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D0FBF9706A669FE7DF6D7C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32889B993BAC097F66B7A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeizeTheMuseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F81CD97B38CFD286B2CCEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeizeTheMuseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFD55C39C81F204B4B476E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeizeTheMuse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2EDB40F21A313700094CB44 /* Sources */ = {
@@ -492,6 +625,7 @@
 		};
 		B2EDB43C21A313710094CB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A454B7B19BB36796AC527E /* Pods-SeizeTheMuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,8 +641,11 @@
 					"@executable_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bastien-El-gana";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ynov.SeizeTheMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,6 +654,7 @@
 		};
 		B2EDB43D21A313710094CB44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7988A48D753C00CB18133CDD /* Pods-SeizeTheMuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,8 +669,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = "Bastien-El-gana";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ynov.SeizeTheMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -541,6 +682,7 @@
 		};
 		B2EDB43F21A313710094CB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A3A9144969C5BC9DC9363B /* Pods-SeizeTheMuseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +704,7 @@
 		};
 		B2EDB44021A313710094CB44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +726,7 @@
 		};
 		B2EDB44221A313710094CB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2EB95C8E7377B0792F8403 /* Pods-SeizeTheMuseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -603,6 +747,7 @@
 		};
 		B2EDB44321A313710094CB44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C8BD1F30E0289AAFD25528 /* Pods-SeizeTheMuseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
