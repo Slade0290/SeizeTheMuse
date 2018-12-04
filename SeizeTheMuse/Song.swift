@@ -13,7 +13,7 @@ struct Song {
     let title : String
     let author : String
     let duration : Int
-    let listOfNotes : [Note]
+    var listOfNotes : [Note]
     
     init(title : String, author : String, duration : Int, list : [Note]){
         self.title = title
