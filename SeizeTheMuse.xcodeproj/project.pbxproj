@@ -13,7 +13,7 @@
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
-		829F22A921B57578006C8350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 829F22A821B57578006C8350 /* GoogleService-Info.plist */; };
+		82D9198821B689D6008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198721B689D6008A0154 /* GoogleService-Info.plist */; };
 		9F8BF5B1AB9258252B60825F /* Pods_SeizeTheMuseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10ADAB8229B243BF91AB03BF /* Pods_SeizeTheMuseTests.framework */; };
 		B2E8258B21A44D2B00E924ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258A21A44D2B00E924ED /* User.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
@@ -70,7 +70,7 @@
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
-		829F22A821B57578006C8350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82D9198721B689D6008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93892FB03775BEBA018DC4CA /* Pods_SeizeTheMuseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeizeTheMuseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		B2E8258A21A44D2B00E924ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		B2EDB41521A313700094CB44 /* SeizeTheMuse */ = {
 			isa = PBXGroup;
 			children = (
-				829F22A821B57578006C8350 /* GoogleService-Info.plist */,
+				82D9198721B689D6008A0154 /* GoogleService-Info.plist */,
 				8241EFFC21AD5DB600058C3F /* LoginController.swift */,
 				8241EFFE21AD5DB600058C3F /* ProfilController.swift */,
 				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
@@ -317,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EDB42121A313710094CB44 /* LaunchScreen.storyboard in Resources */,
-				829F22A921B57578006C8350 /* GoogleService-Info.plist in Resources */,
+				82D9198821B689D6008A0154 /* GoogleService-Info.plist in Resources */,
 				B2EDB41E21A313710094CB44 /* Assets.xcassets in Resources */,
 				B2EDB41C21A313700094CB44 /* Main.storyboard in Resources */,
 			);
