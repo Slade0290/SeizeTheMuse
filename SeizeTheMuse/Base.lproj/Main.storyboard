@@ -286,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KBx-lg-USH">
-                                <rect key="frame" x="0.0" y="214" width="375" height="78"/>
+                                <rect key="frame" x="0.0" y="214" width="375" height="49.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelpseudo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-zg-MWb">
                                         <rect key="frame" x="141" y="0.0" width="93.5" height="20.5"/>
@@ -300,16 +300,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelpassword" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-Le-ffH">
-                                        <rect key="frame" x="130" y="57.5" width="115.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-tz-an8">
-                                <rect key="frame" x="89" y="395" width="197" height="33"/>
+                                <rect key="frame" x="89" y="366.5" width="197" height="33"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Change password">
@@ -368,7 +362,6 @@
                     </view>
                     <connections>
                         <outlet property="EmailAfficher" destination="rzL-Sl-GR0" id="9ka-BG-P2x"/>
-                        <outlet property="PasswordAfficher" destination="XSN-Le-ffH" id="KOG-q4-9mj"/>
                         <outlet property="PseudoAfficher" destination="qfx-zg-MWb" id="4Z3-nX-AOT"/>
                     </connections>
                 </viewController>
