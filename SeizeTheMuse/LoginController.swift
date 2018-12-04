@@ -18,10 +18,13 @@ class LoginController: UIViewController {
     
  	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+      
 	}
     
-    override var shouldAutorotate: Bool {
-        return false
-    }
+//    override var shouldAuçtorotate: Bool {
+//        return false
+//    }
+
 }
 

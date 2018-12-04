@@ -31,7 +31,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="t6Z-hS-7YJ" kind="show" id="vYG-bg-vAy"/>
+                                    <segue destination="t6Z-hS-7YJ" kind="show" id="NN6-Zp-CiB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FK-3j-mFe">
@@ -60,7 +60,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="r5d-p3-OoY" kind="show" id="JgE-tq-UrP"/>
+                                    <segue destination="r5d-p3-OoY" kind="show" id="4gx-HJ-jEw"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="if7-E8-F8g">
@@ -76,7 +76,7 @@
                                         <rect key="frame" x="0.0" y="40.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDl-VU-gCJ">
                                         <rect key="frame" x="0.0" y="90.5" width="343" height="20"/>
@@ -88,7 +88,7 @@
                                         <rect key="frame" x="0.0" y="130.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-144.80000000000001" y="-257.72113943028489"/>
+            <point key="canvasLocation" x="-1297" y="732"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gq5-fV-WoY">
@@ -232,7 +232,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="97j-8X-tuZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="RN1-Dh-Jyc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxC-XJ-paa">
@@ -332,6 +332,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="t6Z-hS-7YJ" kind="show" id="0OQ-Co-Lhg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -353,12 +356,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcl-dZ-7yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="-256"/>
+            <point key="canvasLocation" x="-535" y="1268"/>
         </scene>
         <!--Profil Controller-->
         <scene sceneID="7g3-vU-Pnx">
             <objects>
-                <viewController id="t6Z-hS-7YJ" customClass="ProfilController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="t6Z-hS-7YJ" customClass="ProfilController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VLy-OZ-43z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,7 +417,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="LS6-eu-7TE" kind="show" id="NMs-le-bpz"/>
+                                    <segue destination="LS6-eu-7TE" kind="showDetail" id="d7g-2E-lG4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F45-AW-h9H">
@@ -423,10 +426,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsU-8i-6KO">
+                                <rect key="frame" x="16" y="28" width="46" height="29.5"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log Out">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tLz-bQ-Hna"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KBx-lg-USH" firstAttribute="top" secondItem="F45-AW-h9H" secondAttribute="bottom" constant="92" id="025-hg-8EJ"/>
+                            <constraint firstItem="DsU-8i-6KO" firstAttribute="leading" secondItem="Alt-XS-sV7" secondAttribute="leading" constant="16" id="Lpo-6v-PUh"/>
+                            <constraint firstItem="DsU-8i-6KO" firstAttribute="top" secondItem="Alt-XS-sV7" secondAttribute="top" constant="8" id="NBt-vg-jx4"/>
                             <constraint firstItem="7W7-Qc-p6a" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="UAe-e2-Iwe"/>
                             <constraint firstItem="KBx-lg-USH" firstAttribute="leading" secondItem="Alt-XS-sV7" secondAttribute="leading" id="Xdh-aU-xUq"/>
                             <constraint firstItem="F45-AW-h9H" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="ZJF-06-GIC"/>
@@ -443,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weW-JQ-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663.125" y="-256.6901408450704"/>
+            <point key="canvasLocation" x="-535" y="-40"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eIl-OU-5EY">
@@ -579,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVm-gU-Jfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4226" y="-258"/>
+            <point key="canvasLocation" x="1372" y="-40"/>
         </scene>
         <!--Title-->
         <scene sceneID="7gt-bP-rtE">
@@ -650,7 +672,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7F-9m-rEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="-257"/>
+            <point key="canvasLocation" x="583" y="1268"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xby-At-kw3">
@@ -666,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-KW-0Q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="475"/>
+            <point key="canvasLocation" x="2679" y="1143"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1xR-ZJ-QLQ">
@@ -739,13 +761,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuF-kc-WFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3361" y="-257"/>
+            <point key="canvasLocation" x="2726" y="209"/>
         </scene>
     </scenes>
-    <!--<inferredMetricsTieBreakers>
+    <inferredMetricsTieBreakers>
         <segue reference="rEf-5B-h5Y"/>
-        <segue reference="NMs-le-bpz"/>
-        <segue reference="vYG-bg-vAy"/>
-        <segue reference="MFa-a7-b61"/>
-    </inferredMetricsTieBreakers>-->
+        <segue reference="NN6-Zp-CiB"/>
+        <segue reference="RN1-Dh-Jyc"/>
+    </inferredMetricsTieBreakers>
 </document>
