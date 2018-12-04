@@ -7,30 +7,41 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class ProfilController: UIViewController {
 
+    @IBOutlet weak var PseudoAfficher: UILabel!
+    @IBOutlet weak var EmailAfficher: UILabel!
+    @IBOutlet weak var PasswordAfficher: UILabel!
     
-    override var preferredStatusBarStyle: UIStatusBarStyle
-    {
-        return .lightContent
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let user = Auth.auth().currentUser{
+            let ref = Database.database().reference()
+            let userID = Auth.auth().currentUser?.uid
+            
+            ref.child("users").child(userID!).observeSingleEvent(of: .value) { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                
+                let Pseudo = value?["Pseudo"] as? String ?? "no Pseudo"
+                
+                self.PseudoAfficher.text = Pseudo
+                self.EmailAfficher.text = user.email
+            }
 
-        // Do any additional setup after loading the view.
+        }else{
+            fatalError("Erreur : aucun utilisateur est connecté lors de l'affichage de l'écran d'accueil")
+        }
+    }
+            
+
+    @IBAction func ChangePasswordButton(_ sender: UIStoryboardSegue) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func GoToSongPlayed(_ sender: UIStoryboardSegue) {
     }
-    */
-
 }
