@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
+		0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F0B2721B7D4FA00190F72 /* SoundController.swift */; };
 		0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; };
 		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4868D95E2F46503045F49BEF /* Pods_SeizeTheMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BC60B76FF2456E1C98138C /* Pods_SeizeTheMuseUITests.framework */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseTests/Pods-SeizeTheMuseTests.release.xcconfig"; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
+		0B0F0B2721B7D4FA00190F72 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		24A454B7B19BB36796AC527E /* Pods-SeizeTheMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2EB95C8E7377B0792F8403 /* Pods-SeizeTheMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseUITests/Pods-SeizeTheMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,8 +180,9 @@
 				8241EFFC21AD5DB600058C3F /* LoginController.swift */,
 				8241EFFE21AD5DB600058C3F /* ProfilController.swift */,
 				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
-				B2EDB41621A313700094CB44 /* AppDelegate.swift */,
+				0B0F0B2721B7D4FA00190F72 /* SoundController.swift */,
 				B2EDB41A21A313700094CB44 /* Main.storyboard */,
+				B2EDB41621A313700094CB44 /* AppDelegate.swift */,
 				B2EDB41D21A313710094CB44 /* Assets.xcassets */,
 				B2EDB41F21A313710094CB44 /* LaunchScreen.storyboard */,
 				B2EDB42221A313710094CB44 /* Info.plist */,
@@ -445,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E8258F21A44FCB00E924ED /* Note.swift in Sources */,
+				0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */,
 				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
 				0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */,
 				B2E8258D21A44F4200E924ED /* Song.swift in Sources */,

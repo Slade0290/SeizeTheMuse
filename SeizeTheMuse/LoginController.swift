@@ -23,11 +23,20 @@ class LoginController: UIViewController {
     
  	override func viewDidLoad() {
 		super.viewDidLoad()
+        setupTextfieldsManaging()
 	}
     
     private func setupTextfieldsManaging() {
         EmailTextField.delegate = self
         PasswordTextField.delegate = self
+        
+        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(HideKeyBoard))
+        view.addGestureRecognizer(tapgesture)
+    }
+    
+    @objc private func HideKeyBoard(){
+        EmailTextField.resignFirstResponder()
+        PasswordTextField.resignFirstResponder()
     }
     
     @IBAction func LoginButton(_ sender: Any) {

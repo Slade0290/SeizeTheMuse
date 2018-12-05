@@ -27,6 +27,17 @@ class SubscribeController: UIViewController {
         pseudoTextField.delegate = self
         emailTextField.delegate = self
         password1TextField.delegate = self
+        password2TextField.delegate = self
+        
+        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(HideKeyBoard))
+        view.addGestureRecognizer(tapgesture)
+    }
+    
+    @objc private func HideKeyBoard(){
+        pseudoTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        password1TextField.resignFirstResponder()
+        password2TextField.resignFirstResponder()
     }
     
     @IBAction func SubscribeButton(_ sender: UIButton) {
