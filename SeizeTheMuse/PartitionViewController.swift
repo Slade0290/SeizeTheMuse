@@ -12,10 +12,12 @@ import AudioKitUI
 
 class PartitionViewController: UIViewController {
     
+    @IBOutlet weak var labtest: UILabel!
     
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
+    var end: Bool = false
     
     let nota = Note(name: "La", frequence: 110.00, altered: false)
     let notaa = Note(name: "Do", frequence: 130.81, altered: false)
@@ -50,6 +52,12 @@ class PartitionViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if !end {
+            
+        AKSettings.audioInputEnabled = true
+        mic = AKMicrophone()
+        tracker = AKFrequencyTracker(mic)
+        silence = AKBooster(tracker, gain: 0)
         
         AudioKit.output = silence
          do {
@@ -63,8 +71,9 @@ class PartitionViewController: UIViewController {
          selector: #selector(PartitionViewController.updateUI),
          userInfo: nil,
          repeats: true)
-        
+        }
     }
+    
     @objc func updateUI() {
         let notes: [Note] = [nota, notaa, notaaa]
         let songPlaying = Song(title: "Tanguy", author: "Tanguy", duration: 20, list: notes)
@@ -73,7 +82,8 @@ class PartitionViewController: UIViewController {
         
         var index = 0 //initialisation de l'élément parcourant la liste de notes
         
-        while index < songPlaying.listOfNotes.count {//si la chanson n'est pas finie
+        while index < songPlaying.listOfNotes.count && !end {//tant que la chanson n'est pas finie
+            labtest.text = "\(index)"
             if tracker.amplitude > 0.2 {//note jouée ou chantée
                 
                 if (Float(tracker.frequency) <= (songPlaying.listOfNotes[index].frequence + 0.5) &&
@@ -83,13 +93,10 @@ class PartitionViewController: UIViewController {
                     //en fonction des instruments
                 {
                     index = index + 1
-                    print(index)
-                }
-                else
-                {
-                    print(index)
                 }
             }
         }
+        end = true
+        //segway
     }
 }

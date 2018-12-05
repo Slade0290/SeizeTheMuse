@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401D26121B7476500DBE0C7 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0401D26021B7476500DBE0C7 /* AudioKit.framework */; };
+		0401D26221B7476500DBE0C7 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0401D26021B7476500DBE0C7 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */; };
-		0445C9DE21B6BFE800697D09 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9DD21B6BFE800697D09 /* AudioKit.framework */; };
-		0445C9DF21B6BFE800697D09 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9DD21B6BFE800697D09 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; };
 		0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
@@ -53,8 +53,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0401D26221B7476500DBE0C7 /* AudioKit.framework in Embed Frameworks */,
 				0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */,
-				0445C9DF21B6BFE800697D09 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,8 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0401D26021B7476500DBE0C7 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionViewController.swift; sourceTree = "<group>"; };
-		0445C9DD21B6BFE800697D09 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		0445C9E021B6C01900697D09 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0401D26121B7476500DBE0C7 /* AudioKit.framework in Frameworks */,
 				0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */,
-				0445C9DE21B6BFE800697D09 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +127,8 @@
 		B2EDB40A21A313700094CB44 = {
 			isa = PBXGroup;
 			children = (
+				0401D26021B7476500DBE0C7 /* AudioKit.framework */,
 				0445C9E021B6C01900697D09 /* AudioKitUI.framework */,
-				0445C9DD21B6BFE800697D09 /* AudioKit.framework */,
 				B2EDB41521A313700094CB44 /* SeizeTheMuse */,
 				B2EDB42A21A313710094CB44 /* SeizeTheMuseTests */,
 				B2EDB43521A313710094CB44 /* SeizeTheMuseUITests */,
