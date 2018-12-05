@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401D26121B7476500DBE0C7 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0401D26021B7476500DBE0C7 /* AudioKit.framework */; };
+		0401D26221B7476500DBE0C7 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0401D26021B7476500DBE0C7 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */; };
+		0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; };
+		0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
 		055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
 		0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F0B2721B7D4FA00190F72 /* SoundController.swift */; };
-		0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; };
-		0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28560A21A608FF00D060D8 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4868D95E2F46503045F49BEF /* Pods_SeizeTheMuseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BC60B76FF2456E1C98138C /* Pods_SeizeTheMuseUITests.framework */; };
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
@@ -54,7 +58,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0B28560C21A608FF00D060D8 /* AudioKit.framework in Embed Frameworks */,
+				0401D26221B7476500DBE0C7 /* AudioKit.framework in Embed Frameworks */,
+				0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,10 +67,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0401D26021B7476500DBE0C7 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionViewController.swift; sourceTree = "<group>"; };
+		0445C9E021B6C01900697D09 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
+		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseTests/Pods-SeizeTheMuseTests.release.xcconfig"; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		0B0F0B2721B7D4FA00190F72 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
-		0B28560A21A608FF00D060D8 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		24A454B7B19BB36796AC527E /* Pods-SeizeTheMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2EB95C8E7377B0792F8403 /* Pods-SeizeTheMuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseUITests/Pods-SeizeTheMuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7988A48D753C00CB18133CDD /* Pods-SeizeTheMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuse.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuse/Pods-SeizeTheMuse.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B28560B21A608FF00D060D8 /* AudioKit.framework in Frameworks */,
+				0401D26121B7476500DBE0C7 /* AudioKit.framework in Frameworks */,
+				0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */,
 				055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +162,8 @@
 		B2EDB40A21A313700094CB44 = {
 			isa = PBXGroup;
 			children = (
-				0B28560A21A608FF00D060D8 /* AudioKit.framework */,
+				0401D26021B7476500DBE0C7 /* AudioKit.framework */,
+				0445C9E021B6C01900697D09 /* AudioKitUI.framework */,
 				B2EDB41521A313700094CB44 /* SeizeTheMuse */,
 				B2EDB42A21A313710094CB44 /* SeizeTheMuseTests */,
 				B2EDB43521A313710094CB44 /* SeizeTheMuseUITests */,
@@ -191,6 +201,7 @@
 				B2E8258E21A44FCB00E924ED /* Note.swift */,
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
 				0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */,
+				0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */,
 			);
 			path = SeizeTheMuse;
 			sourceTree = "<group>";
@@ -455,6 +466,7 @@
 				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
+				0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */,
 				B2E8258B21A44D2B00E924ED /* User.swift in Sources */,
 				8241F00021AD5DB600058C3F /* LoginController.swift in Sources */,
 			);
