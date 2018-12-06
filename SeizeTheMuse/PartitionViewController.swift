@@ -12,44 +12,26 @@ import AudioKitUI
 
 class PartitionViewController: UIViewController {
     
-    @IBOutlet weak var labtest: UILabel!
-    
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var end: Bool = false
     
-    let nota = Note(name: "La", frequence: 110.00, altered: false)
-    let notaa = Note(name: "Do", frequence: 130.81, altered: false)
-    let notaaa = Note(name: "Re", frequence: 146.83, altered: false)
-    //   let noteFrequencies = [16.35, 17.32, 18.35, 19.45, 20.6, 21.83, 23.12, 24.5, 25.96, 27.5, 29.14, 30.87]
-    
-    /*    override func viewWillDisappear(_ animated : Bool) {
-     super.viewWillDisappear(animated)
-     UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
-     }*/
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*AKSettings.audioInputEnabled = true
-        mic = AKMicrophone()
-        tracker = AKFrequencyTracker(mic)
-        silence = AKBooster(tracker, gain: 0)
-        
-        AudioKit.output = silence
-        do {
-            try AudioKit.start()
-        }
-        catch {
-            AKLog("AudioKit did not start !")
-        }
-        Timer.scheduledTimer(timeInterval: 0.1,
-                             target: self,
-                             selector: #selector(PartitionViewController.updateUI),
-                             userInfo: nil,
-                             repeats: true)*/
+        // Do any additional setup after loading the view, typically from a nib.
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if !end {
@@ -75,15 +57,16 @@ class PartitionViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        let notes: [Note] = [nota, notaa, notaaa]
-        let songPlaying = Song(title: "Tanguy", author: "Tanguy", duration: 20, list: notes)
+        //let notes: [Note] = [nota, notaa, notaaa]
+        //let songPlaying = Song(title: "Tanguy", author: "Tanguy", duration: 20, list: notes)
+        
         //chanson avec la liste de note déclarée en début de programme
         
         
         var index = 0 //initialisation de l'élément parcourant la liste de notes
-        
+        /*
         while index < songPlaying.listOfNotes.count && !end {//tant que la chanson n'est pas finie
-            labtest.text = "\(index)"
+            //labtest.text = "\(index)"
             if tracker.amplitude > 0.2 {//note jouée ou chantée
                 
                 if (Float(tracker.frequency) <= (songPlaying.listOfNotes[index].frequence + 0.5) &&
@@ -92,11 +75,12 @@ class PartitionViewController: UIViewController {
                     //on laisse un intervalle plus large pour les différents accordages
                     //en fonction des instruments
                 {
-                    index = index + 1
+                    index += 1
                 }
             }
         }
+        */
         end = true
-        //segway
+        //call segue
     }
 }

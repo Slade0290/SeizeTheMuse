@@ -12,7 +12,6 @@
 		0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */; };
 		0445C9E121B6C01900697D09 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; };
 		0445C9E221B6C01900697D09 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0445C9E021B6C01900697D09 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8241EFFF21AD5DB600058C3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */; };
 		055BA2BC3EDE290C0DC989A6 /* Pods_SeizeTheMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1471DADF6846CED267D9F5 /* Pods_SeizeTheMuse.framework */; };
 		0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */; };
 		0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F0B2721B7D4FA00190F72 /* SoundController.swift */; };
@@ -21,6 +20,7 @@
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
+		B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */; };
 		B2E8258B21A44D2B00E924ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258A21A44D2B00E924ED /* User.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
 		B2E8258F21A44FCB00E924ED /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258E21A44FCB00E924ED /* Note.swift */; };
@@ -70,7 +70,6 @@
 		0401D26021B7476500DBE0C7 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionViewController.swift; sourceTree = "<group>"; };
 		0445C9E021B6C01900697D09 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKitUI.framework; sourceTree = "<group>"; };
-		8241EFFB21AD5DB600058C3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A5D0242B07F709EB8C328F7 /* Pods-SeizeTheMuseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeizeTheMuseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeizeTheMuseTests/Pods-SeizeTheMuseTests.release.xcconfig"; sourceTree = "<group>"; };
 		0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		0B0F0B2721B7D4FA00190F72 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionAndNotesViewController.swift; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		B2E8258A21A44D2B00E924ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2E8258C21A44F4200E924ED /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
@@ -202,6 +202,7 @@
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
 				0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */,
 				0445C9DB21B6BF4900697D09 /* PartitionViewController.swift */,
+				B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */,
 			);
 			path = SeizeTheMuse;
 			sourceTree = "<group>";
@@ -459,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E8258F21A44FCB00E924ED /* Note.swift in Sources */,
+				B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */,
 				0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */,
 				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
 				0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */,
