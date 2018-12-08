@@ -14,7 +14,6 @@ class ProfilController: UIViewController {
 
     @IBOutlet weak var PseudoAfficher: UILabel!
     @IBOutlet weak var EmailAfficher: UILabel!
-    @IBOutlet weak var PasswordAfficher: UILabel!
     
     
     override func viewDidLoad() {
@@ -38,9 +37,10 @@ class ProfilController: UIViewController {
         }
     }
             
-
-    @IBAction func ChangePasswordButton(_ sender: UIStoryboardSegue) {
+    @IBAction func GoToCreateSong(_ sender: UIStoryboardSegue) {
+        performSegue(withIdentifier: "CreateSound", sender: nil)
     }
+    
     
     @IBAction func GoToSongPlayed(_ sender: UIStoryboardSegue) {
     }
