@@ -15,6 +15,10 @@ class ProfilController: UIViewController {
     @IBOutlet weak var PseudoAfficher: UILabel!
     @IBOutlet weak var EmailAfficher: UILabel!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +40,11 @@ class ProfilController: UIViewController {
             fatalError("Erreur : aucun utilisateur est connecté lors de l'affichage de l'écran d'accueil")
         }
     }
-            
+    
+    
+    @IBAction func btnLogOut(_ sender: Any) {
+    }
+    
     @IBAction func GoToCreateSong(_ sender: UIStoryboardSegue) {
         performSegue(withIdentifier: "CreateSound", sender: nil)
     }

@@ -17,6 +17,10 @@ class SubscribeController: UIViewController {
     @IBOutlet weak var password1TextField: UITextField!
     @IBOutlet weak var password2TextField: UITextField!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

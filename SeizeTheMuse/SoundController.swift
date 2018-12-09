@@ -18,45 +18,84 @@ class SoundController: UIViewController {
         SetLabel()
         SetTextFields()
     }
+  
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
+        return .lightContent
+    }
     
     @IBOutlet weak var labelsound: UILabel!
     @IBOutlet weak var SoundName: UITextField!
-    
-    @IBAction func btnDO(_ sender: Any) {
+
+
+    @IBAction func btnRe3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Do"
+        labelsound.text = tmp! + " Ré(3)"
     }
+    
+    @IBAction func btnMi3(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    @IBAction func btnFa3(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    
+    @IBAction func btnSol3(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    @IBAction func btnLa3(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    
+    @IBAction func btnSi3(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    @IBAction func btnDo4(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    
    
-    @IBAction func btnRE(_ sender: Any) {
+    @IBAction func btnMi4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Re"
-    }
-    
-    @IBAction func btnMI(_ sender: Any) {
-        let tmp = labelsound.text
-        labelsound.text = tmp! + " Mi"
-    }
-    
-    @IBAction func btnFA(_ sender: Any) {
-        let tmp = labelsound.text
-        labelsound.text = tmp! + " Fa"
-    }
-    
-    @IBAction func btnSOL(_ sender: Any) {
-        let tmp = labelsound.text
-        labelsound.text = tmp! + " Sol"
-    }
-    
-    @IBAction func btnLA(_ sender: Any) {
-        let tmp = labelsound.text
-        labelsound.text = tmp! + " La"
+        labelsound.text = tmp! + " Ré(3)"
     }
     
     
-    @IBAction func btnSI(_ sender: Any) {
+    
+    
+    @IBAction func btnFa4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Si"
+        labelsound.text = tmp! + " Ré(3)"
     }
+    
+    
+    
+    
+    @IBAction func btnSol4(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " Ré(3)"
+    }
+    
+    
+    
     
     private func SetLabel(){
         labelsound.layer.borderWidth = 1
