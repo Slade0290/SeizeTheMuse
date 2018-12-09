@@ -62,7 +62,6 @@ class PartitionViewController: UIViewController {
         
         //chanson avec la liste de note déclarée en début de programme
         
-        
         var index = 0 //initialisation de l'élément parcourant la liste de notes
         /*
         while index < songPlaying.listOfNotes.count && !end {//tant que la chanson n'est pas finie
@@ -79,8 +78,31 @@ class PartitionViewController: UIViewController {
                 }
             }
         }
+         //Call here animation pour bouger les notes mais comment obtenir les notes qui sont dans le niveau du dessous, c'est à dire dans le container view
         */
         end = true
         //call segue
+    }
+    
+    
+    public func animation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            //self.imgNote3.frame.origin.x -= 100
+            //hide notes
+            //toutes les notes données en argument
+        })
+    }
+    
+    public func hideNotes(_ imgNote: UIImageView) {
+        if Int(imgNote.frame.origin.x) < ((Int)(1 * 0.75)/2)/*la taille de la partition jusqu'à la clé de sol*/ {
+            imgNote.isHidden = true
+        }
+    }
+    
+    public func endOfTheSong(){
+        //go to another screen
+        //segue have to pass the information
+        //temps mis à jouer la chanson
+        // what else ?
     }
 }

@@ -14,7 +14,7 @@ class SoundController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         SetLabel()
         SetTextFields()
     }
@@ -66,7 +66,7 @@ class SoundController: UIViewController {
     
     private func SetTextFields(){
         SoundName.delegate = self
-        
+
         let tapgesture = UITapGestureRecognizer(target: self, action: #selector(HideKeyBoard))
         view.addGestureRecognizer(tapgesture)
     }
@@ -74,8 +74,6 @@ class SoundController: UIViewController {
     @objc private func HideKeyBoard(){
         SoundName.resignFirstResponder()
     }
-    
-    
 
     @IBAction func CreateSongDb(_ sender: Any) {
         let temp = labelsound.text
@@ -91,12 +89,10 @@ class SoundController: UIViewController {
                 
                 ref.child("Sounds").child(Pseudo).child(soundName!).setValue(["Son": temp])
             }
-        }else{
+        } else {
             print("Erreur : Nom du son manquant ou son manquant")
         }
-
     }
-    
 }
 
 extension SoundController: UITextFieldDelegate {

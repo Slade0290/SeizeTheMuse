@@ -29,7 +29,7 @@ class PartitionAndNotesViewController: UIViewController {
         drawPartition()
         var y = 38
         addKey()
-        for i in 1...11 {
+        for i in 1...11 {// 1 jusqu'à la longueur de la liste de note
             addNotes(24 + 50 * i, y)//Prend un tableau de note en argument
             y += 5
         }
@@ -116,5 +116,4 @@ class PartitionAndNotesViewController: UIViewController {
         line.fillColor = UIColor.black.cgColor
         self.view.layer.addSublayer(line)
     }
-
 }
