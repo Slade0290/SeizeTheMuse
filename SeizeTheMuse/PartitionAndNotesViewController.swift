@@ -10,6 +10,12 @@ import UIKit
 
 class PartitionAndNotesViewController: UIViewController {
     
+    var imgTab: [UIImageView] = []
+    
+    convenience init() {
+        self.init(nibName:nil, bundle:nil)
+    }
+    
     // Screen width est la longueur en mode paysage
     public var screenWidth: CGFloat {
         return UIScreen.main.bounds.size.width
@@ -27,11 +33,36 @@ class PartitionAndNotesViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
         self.view.backgroundColor = UIColor.red
         drawPartition()
-        var y = 38
         addKey()
-        for i in 1...11 {// 1 jusqu'à la longueur de la liste de note
-            addNotes(24 + 50 * i, y)//Prend un tableau de note en argument
+    }
+    
+    // Add notes to the partition
+    public func addAllNotes(_ tabOfNotes: [String]) {
+        var y = 38
+        
+        for i in 1...tabOfNotes.count {
+            addNotes(x: 0 * i, y: 0)
             y += 5
+        }
+    }
+    
+    
+    // Animation of the notes
+    public func animation() {
+        UIView.animate(withDuration: 1, animations: {
+            for i in 0...self.imgTab.count {
+                self.imgTab[i].frame.origin.x -= 50
+                self.hideNotes()
+            }
+        })
+    }
+    
+    // Hide notes
+    public func hideNotes() {
+        for i in 0...self.imgTab.count {
+            if Int(self.imgTab[i].frame.origin.x) < ((Int)(1 * 0.75)/2) {
+                self.imgTab[i].isHidden = true
+            }
         }
     }
     
@@ -45,13 +76,13 @@ class PartitionAndNotesViewController: UIViewController {
     }
     
     // Add note match position
-    func addNotes(_ posX : Int, _ posY : Int){
-        let note = "note.png"
-        let image = UIImage(named: note)
+    func addNotes(x posX : Int, y posY : Int){
+        let image = UIImage(named: "note.png")
         let noteView = UIImageView(image: image!)
         noteView.frame = CGRect(x: posX, y: posY, width: 38, height: 38)
         view.addSubview(noteView)
         addLabel(posX, posY)
+        imgTab.append(noteView)
     }
     
     // Add label matching note

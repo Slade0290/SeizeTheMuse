@@ -16,6 +16,29 @@ class PartitionViewController: UIViewController {
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var end: Bool = false
+    var song: Song
+    
+    init(_ song: Song) {
+        
+        //Get all information from the segue
+        let title = ""
+        let author = ""
+        let listOfNotes: [String]
+        //Parse list of notes
+        //for 0... list.count etc... treat do octave and create note then put into tab
+        var list: [Note]
+        
+        list = nil
+        
+        self.song = Song(title, author, list)
+        
+        let instanceOfPartition = PartitionAndNotesViewController()
+        instanceOfPartition.addAllNotes(listOfNotes)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,52 +80,35 @@ class PartitionViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        //let notes: [Note] = [nota, notaa, notaaa]
-        //let songPlaying = Song(title: "Tanguy", author: "Tanguy", duration: 20, list: notes)
-        
+        //Use song here
         //chanson avec la liste de note déclarée en début de programme
         
         var index = 0 //initialisation de l'élément parcourant la liste de notes
-        /*
-        while index < songPlaying.listOfNotes.count && !end {//tant que la chanson n'est pas finie
-            //labtest.text = "\(index)"
+        let instanceOfPartition = PartitionAndNotesViewController()
+        
+        while index < song.listOfNotes.count && !end {
+            //tant que la chanson n'est pas finie
+         
             if tracker.amplitude > 0.2 {//note jouée ou chantée
                 
-                if (Float(tracker.frequency) <= (songPlaying.listOfNotes[index].frequence + 0.5) &&
-                    Float(tracker.frequency) >= (songPlaying.listOfNotes[index].frequence - 0.5))
+                if (Double(tracker.frequency) <= (song.listOfNotes[index].frequence + 0.5) &&
+                    Double(tracker.frequency) >= (song.listOfNotes[index].frequence - 0.5))
                     //comparaison note jouée et note attendue
                     //on laisse un intervalle plus large pour les différents accordages
                     //en fonction des instruments
                 {
                     index += 1
+                    instanceOfPartition.animation()
                 }
             }
         }
-         //Call here animation pour bouger les notes mais comment obtenir les notes qui sont dans le niveau du dessous, c'est à dire dans le container view
-        */
-        end = true
-        //call segue
+        endOfTheSong()
     }
     
     
-    public func animation(_ sender: Any) {
-        UIView.animate(withDuration: 1, animations: {
-            //self.imgNote3.frame.origin.x -= 100
-            //hide notes
-            //toutes les notes données en argument
-        })
-    }
-    
-    public func hideNotes(_ imgNote: UIImageView) {
-        if Int(imgNote.frame.origin.x) < ((Int)(1 * 0.75)/2)/*la taille de la partition jusqu'à la clé de sol*/ {
-            imgNote.isHidden = true
-        }
-    }
     
     public func endOfTheSong(){
         //go to another screen
         //segue have to pass the information
-        //temps mis à jouer la chanson
-        // what else ?
     }
 }

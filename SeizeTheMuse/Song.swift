@@ -14,7 +14,7 @@ struct Song {
     let author : String
     let listOfNotes : [Note]
     
-    init(title : String, author : String, list : [Note]){
+    init(_ title : String, _ author : String, _ list : [Note]){
         self.title = title
         self.author = author
         self.listOfNotes = list
