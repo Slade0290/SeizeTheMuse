@@ -647,10 +647,10 @@
             </objects>
             <point key="canvasLocation" x="2505" y="698"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="FBo-u0-Dd8">
             <objects>
-                <viewController id="YRx-fQ-IY5" sceneMemberID="viewController">
+                <viewController id="YRx-fQ-IY5" customClass="ResultViewController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GXS-wK-etF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -726,10 +726,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YVq-yW-g4Q"/>
                     </view>
+                    <connections>
+                        <outlet property="achievement" destination="Z6e-KT-ZLZ" id="X4s-iQ-0Pk"/>
+                        <outlet property="goodNotes" destination="SQ8-qA-xgC" id="HtB-Om-HlE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDk-rt-Oxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013.5999999999999" y="557.27136431784118"/>
+            <point key="canvasLocation" x="3799" y="732"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1xR-ZJ-QLQ">
@@ -1046,7 +1050,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="d7g-2E-lG4"/>
         <segue reference="YkC-Ee-vcK"/>
-        <segue reference="rEf-5B-h5Y"/>
-        <segue reference="MFa-a7-b61"/>
     </inferredMetricsTieBreakers>
 </document>
