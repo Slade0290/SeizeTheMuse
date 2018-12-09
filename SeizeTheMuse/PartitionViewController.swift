@@ -16,6 +16,29 @@ class PartitionViewController: UIViewController {
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var end: Bool = false
+    var song: Song
+    
+    init(_ song: Song) {
+        
+        //Get all information from the segue
+        let title = ""
+        let author = ""
+        let listOfNotes: [String]
+        //Parse list of notes
+        //for 0... list.count etc... treat do octave and create note then put into tab
+        var list: [Note]
+        
+        list = nil
+        
+        self.song = Song(title, author, list)
+        
+        let instanceOfPartition = PartitionAndNotesViewController()
+        instanceOfPartition.addAllNotes(listOfNotes)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,30 +80,37 @@ class PartitionViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        //let notes: [Note] = [nota, notaa, notaaa]
-        //let songPlaying = Song(title: "Tanguy", author: "Tanguy", duration: 20, list: notes)
-        
+        //Use song here
         //chanson avec la liste de note déclarée en début de programme
         
-        
         var index = 0 //initialisation de l'élément parcourant la liste de notes
-        /*
-        while index < songPlaying.listOfNotes.count && !end {//tant que la chanson n'est pas finie
-            //labtest.text = "\(index)"
+        let instanceOfPartition = PartitionAndNotesViewController()
+        
+        while index < song.listOfNotes.count && !end {
+            //tant que la chanson n'est pas finie
+         
             if tracker.amplitude > 0.2 {//note jouée ou chantée
                 
-                if (Float(tracker.frequency) <= (songPlaying.listOfNotes[index].frequence + 0.5) &&
-                    Float(tracker.frequency) >= (songPlaying.listOfNotes[index].frequence - 0.5))
+                if (Double(tracker.frequency) <= (song.listOfNotes[index].frequence + 0.5) &&
+                    Double(tracker.frequency) >= (song.listOfNotes[index].frequence - 0.5))
                     //comparaison note jouée et note attendue
                     //on laisse un intervalle plus large pour les différents accordages
                     //en fonction des instruments
                 {
                     index += 1
+                    instanceOfPartition.animation()
                 }
             }
         }
-        */
-        end = true
-        //call segue
+        endOfTheSong()
+    }
+    
+    
+    // Change screen
+    public func endOfTheSong() {
+        //segue have to pass the information
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        
+        self.navigationController!.pushViewController(secondViewController, animated: true)
     }
 }
