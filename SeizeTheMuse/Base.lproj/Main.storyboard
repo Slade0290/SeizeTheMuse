@@ -410,10 +410,10 @@
             </objects>
             <point key="canvasLocation" x="600.79999999999995" y="-22.03898050974513"/>
         </scene>
-        <!--View Controller-->
+        <!--Profil Song Controller-->
         <scene sceneID="eIl-OU-5EY">
             <objects>
-                <viewController id="9JB-vJ-tFs" sceneMemberID="viewController">
+                <viewController id="9JB-vJ-tFs" customClass="ProfilSongController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aj7-8e-sxd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

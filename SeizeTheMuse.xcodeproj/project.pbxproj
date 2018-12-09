@@ -20,6 +20,7 @@
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
+		B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B263E21BDB4E600F5651A /* ProfilSongController.swift */; };
 		B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */; };
 		B296D26A21BD706200D5CC50 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26921BD706200D5CC50 /* ResultViewController.swift */; };
 		B2E8258D21A44F4200E924ED /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258C21A44F4200E924ED /* Song.swift */; };
@@ -82,6 +83,7 @@
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B28B263E21BDB4E600F5651A /* ProfilSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSongController.swift; sourceTree = "<group>"; };
 		B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionAndNotesViewController.swift; sourceTree = "<group>"; };
 		B296D26921BD706200D5CC50 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
 				0B0F0B2721B7D4FA00190F72 /* SoundController.swift */,
 				B2EDB41A21A313700094CB44 /* Main.storyboard */,
+				B28B263E21BDB4E600F5651A /* ProfilSongController.swift */,
 				B296D26921BD706200D5CC50 /* ResultViewController.swift */,
 				B2EDB41621A313700094CB44 /* AppDelegate.swift */,
 				B2EDB41D21A313710094CB44 /* Assets.xcassets */,
@@ -462,6 +465,7 @@
 				B2E8258F21A44FCB00E924ED /* Note.swift in Sources */,
 				B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */,
 				0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */,
+				B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */,
 				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
 				0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */,
 				B2E8258D21A44F4200E924ED /* Song.swift in Sources */,
