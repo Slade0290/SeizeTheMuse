@@ -11,6 +11,7 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class SoundController: UIViewController {
+    var difficulty = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,21 @@ class SoundController: UIViewController {
     @IBOutlet weak var labelsound: UILabel!
     @IBOutlet weak var SoundName: UITextField!
 
-
+    @IBOutlet weak var segmentedValue: UISegmentedControl!
+    
+    @IBAction func Difficulty(_ sender: Any) {
+        switch segmentedValue.selectedSegmentIndex {
+        case 0:
+            difficulty = "Easy"
+        case 1:
+            difficulty = "Medium"
+        case 2:
+            difficulty = "Hard"
+        default:
+            difficulty = "None"
+        }
+    }
+    
     @IBAction func btnRe3(_ sender: Any) {
         let tmp = labelsound.text
         labelsound.text = tmp! + " D3"
@@ -117,7 +132,7 @@ class SoundController: UIViewController {
                     "son" : temp,
                     "title" :soundName!,
                     "date": dateTime,
-                    "difficulty": difficulty
+                    "difficulty": self.difficulty
 
                 ]
                 
@@ -129,7 +144,7 @@ class SoundController: UIViewController {
             print("Erreur : Nom du son manquant ou son manquant")
         }
     }
-
+    
 }
 
 extension SoundController: UITextFieldDelegate {

@@ -1063,33 +1063,30 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="3YC-lm-mhG">
-                                <rect key="frame" x="113.5" y="226" width="247.5" height="31"/>
-                                <color key="minimumTrackTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFP-yh-i6f">
-                                <rect key="frame" x="98" y="230" width="9.5" height="20.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-gR-ssk">
+                                <rect key="frame" x="110" y="226" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Easy"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Hard"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Difficulty:" destination="VGZ-lT-r2F" eventType="valueChanged" id="OfQ-WH-JTW"/>
+                                    <action selector="segmentedValue:" destination="VGZ-lT-r2F" eventType="valueChanged" id="s6i-eh-b5w"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="gGm-BE-7GT" secondAttribute="trailing" constant="20" id="2bW-xt-3fj"/>
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="ixP-08-gG6" secondAttribute="trailing" constant="16" id="4bQ-IL-58f"/>
                             <constraint firstItem="gGm-BE-7GT" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" constant="-2" id="6bx-gL-UPL"/>
-                            <constraint firstItem="3YC-lm-mhG" firstAttribute="top" secondItem="ixP-08-gG6" secondAttribute="bottom" constant="32" id="Hph-h1-ae7"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="leading" secondItem="Lgl-BV-m4h" secondAttribute="trailing" constant="16" id="KmE-JS-Pgj"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="top" secondItem="VOQ-K8-YlR" secondAttribute="top" constant="30" id="LKp-Or-xHD"/>
-                            <constraint firstItem="MFP-yh-i6f" firstAttribute="top" secondItem="Lgl-BV-m4h" secondAttribute="bottom" constant="41" id="MMs-YY-7NX"/>
-                            <constraint firstItem="3YC-lm-mhG" firstAttribute="leading" secondItem="MFP-yh-i6f" secondAttribute="trailing" constant="8" id="O8e-g9-muG"/>
-                            <constraint firstItem="MFP-yh-i6f" firstAttribute="leading" secondItem="Kvm-zN-k84" secondAttribute="trailing" constant="2" id="OOP-F0-31d"/>
                             <constraint firstItem="KVr-m5-WIf" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="OP9-E8-md2"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="Qh6-C9-D2z"/>
-                            <constraint firstItem="3YC-lm-mhG" firstAttribute="leading" secondItem="MFP-yh-i6f" secondAttribute="trailing" constant="8" id="Scq-0S-iVC"/>
                             <constraint firstItem="Lgl-BV-m4h" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="62" id="TZs-F3-ghR"/>
                             <constraint firstItem="Kvm-zN-k84" firstAttribute="top" secondItem="Lgl-BV-m4h" secondAttribute="bottom" constant="41" id="ZjO-Rq-Xq1"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="57" id="ciL-Oh-DN5"/>
@@ -1100,15 +1097,14 @@
                             <constraint firstItem="gGm-BE-7GT" firstAttribute="leading" secondItem="VOQ-K8-YlR" secondAttribute="leading" constant="16" id="lDo-Kd-NCU"/>
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="bottom" secondItem="KVr-m5-WIf" secondAttribute="bottom" priority="750" constant="69" id="mDh-jT-Cm4"/>
                             <constraint firstItem="gGm-BE-7GT" firstAttribute="top" secondItem="YYy-ns-I7x" secondAttribute="bottom" constant="30" id="qVQ-K2-C9V"/>
-                            <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="3YC-lm-mhG" secondAttribute="trailing" constant="16" id="sLk-Xy-2ev"/>
                             <constraint firstItem="Kvm-zN-k84" firstAttribute="leading" secondItem="VOQ-K8-YlR" secondAttribute="leading" constant="16" id="xaH-qX-3sG"/>
-                            <constraint firstItem="3YC-lm-mhG" firstAttribute="top" secondItem="ixP-08-gG6" secondAttribute="bottom" constant="32" id="yqV-sw-3Ue"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VOQ-K8-YlR"/>
                     </view>
                     <connections>
                         <outlet property="SoundName" destination="ixP-08-gG6" id="3TM-aU-NIn"/>
                         <outlet property="labelsound" destination="gGm-BE-7GT" id="zVC-Bl-DBs"/>
+                        <outlet property="segmentedValue" destination="lRW-gR-ssk" id="qAa-Xy-AH0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnu-iR-jqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
