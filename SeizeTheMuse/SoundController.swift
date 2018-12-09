@@ -88,14 +88,31 @@ class SoundController: UIViewController {
                 let value = snapshot.value as? NSDictionary
                 
                 let Pseudo = value?["Pseudo"] as? String ?? "no Pseudo"
+                let date = Date()
+                let dateFormat = DateFormatter()
+                dateFormat.dateFormat = "dd/MM/YYYY"
+                let dateTime = dateFormat.string(from: date)
                 
-                ref.child("Sounds").child(Pseudo).child(soundName!).setValue(["Son": temp])
+                
+                let post = [
+                    "author": Pseudo,
+                    "son" : temp,
+                    "title" :soundName!,
+                    "date": dateTime,
+                    "difficulty": difficulty
+
+                ]
+                
+                
+                ref.child("Sounds").childByAutoId().setValue(post)
+                
             }
         }else{
             print("Erreur : Nom du son manquant ou son manquant")
         }
 
     }
+    
     
 }
 
