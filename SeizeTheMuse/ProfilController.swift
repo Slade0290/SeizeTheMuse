@@ -43,6 +43,7 @@ class ProfilController: UIViewController {
     
     
     @IBAction func btnLogOut(_ sender: Any) {
+        performSegue(withIdentifier: "logout", sender: nil)
     }
     
     @IBAction func GoToCreateSong(_ sender: UIStoryboardSegue) {
