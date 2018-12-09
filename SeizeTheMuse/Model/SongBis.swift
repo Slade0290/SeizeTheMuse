@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Song: NSObject {
+class SongBis: NSObject {
     var title: String?
     var author: String?
     var son: String?

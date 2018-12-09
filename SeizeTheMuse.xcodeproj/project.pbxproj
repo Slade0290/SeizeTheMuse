@@ -19,10 +19,10 @@
 		8241F00021AD5DB600058C3F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFC21AD5DB600058C3F /* LoginController.swift */; };
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
-		82BF356C21BD32A000FB1984 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF356B21BD32A000FB1984 /* Song.swift */; };
 		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
 		82EABB5321BC36F20003264C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EABB5221BC36F20003264C /* SearchController.swift */; };
 		B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B263E21BDB4E600F5651A /* ProfilSongController.swift */; };
+		B28B264121BDDEF500F5651A /* SongBis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B264021BDDEF500F5651A /* SongBis.swift */; };
 		B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */; };
 		B296D26A21BD706200D5CC50 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26921BD706200D5CC50 /* ResultViewController.swift */; };
 		B2E8258F21A44FCB00E924ED /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8258E21A44FCB00E924ED /* Note.swift */; };
@@ -83,10 +83,10 @@
 		8241EFFC21AD5DB600058C3F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
-		82BF356B21BD32A000FB1984 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82EABB5221BC36F20003264C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SearchController.swift; sourceTree = "<group>"; };
 		B28B263E21BDB4E600F5651A /* ProfilSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSongController.swift; sourceTree = "<group>"; };
+		B28B264021BDDEF500F5651A /* SongBis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongBis.swift; sourceTree = "<group>"; };
 		B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionAndNotesViewController.swift; sourceTree = "<group>"; };
 		B296D26921BD706200D5CC50 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		82BF356A21BD326800FB1984 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				82BF356B21BD32A000FB1984 /* Song.swift */,
+				B28B264021BDDEF500F5651A /* SongBis.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -478,6 +478,7 @@
 				B2E8258F21A44FCB00E924ED /* Note.swift in Sources */,
 				B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */,
 				0B0F0B2821B7D4FA00190F72 /* SoundController.swift in Sources */,
+				B28B264121BDDEF500F5651A /* SongBis.swift in Sources */,
 				82EABB5321BC36F20003264C /* SearchController.swift in Sources */,
 				B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */,
 				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
@@ -486,7 +487,6 @@
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
 				0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */,
-				82BF356C21BD32A000FB1984 /* Song.swift in Sources */,
 				8241F00021AD5DB600058C3F /* LoginController.swift in Sources */,
 				B296D26A21BD706200D5CC50 /* ResultViewController.swift in Sources */,
 			);

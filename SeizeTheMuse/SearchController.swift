@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-    var songs = [Song]()
+    var songs = [SongBis]()
     var myIndex = 0
 
 class SearchController: UIViewController {
@@ -19,7 +19,7 @@ class SearchController: UIViewController {
     @IBOutlet weak var TableSound: UITableView!
     
 
-    var searchSongs = [Song]()
+    var searchSongs = [SongBis]()
     var searching = false
 
     
@@ -38,7 +38,7 @@ class SearchController: UIViewController {
                 print(snapshot)
                 print("dictionary")
                 print(dictionary)
-                let song = Song()
+                let song = SongBis()
                 song.author = dictionary["author"] as? String
                 song.title = dictionary["title"] as? String
                 song.son = dictionary["son"] as? String
