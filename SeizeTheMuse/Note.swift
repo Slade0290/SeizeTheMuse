@@ -15,7 +15,7 @@ struct Note {
     var frequence : Double
     var position : Int
     
-    init(name : String, octave : Int) {
+    init(_ name : String, _ octave : Int) {
         self.name = name
         self.octave = octave
         self.frequence = 0

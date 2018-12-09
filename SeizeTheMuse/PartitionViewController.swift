@@ -17,23 +17,12 @@ class PartitionViewController: UIViewController {
     var silence: AKBooster!
     var end: Bool = false
     var song: Song
+    var listOfStringOfNotes: [String]
     
     init(_ song: Song) {
         
-        //Get all information from the segue
-        let title = ""
-        let author = ""
-        let listOfNotes: [String]
-        //Parse list of notes
-        //for 0... list.count etc... treat do octave and create note then put into tab
-        var list: [Note]
-        
-        list = nil
-        
-        self.song = Song(title, author, list)
-        
         let instanceOfPartition = PartitionAndNotesViewController()
-        instanceOfPartition.addAllNotes(listOfNotes)
+        instanceOfPartition.addAllNotes(listOfStringOfNotes)
     }
     
     required init?(coder aDecoder: NSCoder) {
