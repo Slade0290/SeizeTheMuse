@@ -28,7 +28,7 @@ class ProfilSongController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let son:Song = songs[myIndex]
+        let son:SongBis = songs[myIndex]
         TitleText.text = son.title
         AuthorText.text = son.author
         
@@ -73,5 +73,5 @@ class ProfilSongController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-
+    */
 }
