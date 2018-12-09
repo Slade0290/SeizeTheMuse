@@ -106,9 +106,8 @@ class PartitionViewController: UIViewController {
     }
     
     
-    
-    public func endOfTheSong(){
-        //go to another screen
+    // Change screen
+    public func endOfTheSong() {
         //segue have to pass the information
         let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         
