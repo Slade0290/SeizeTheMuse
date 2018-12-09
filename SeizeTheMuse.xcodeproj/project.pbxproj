@@ -21,6 +21,7 @@
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
 		82EABB5321BC36F20003264C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EABB5221BC36F20003264C /* SearchController.swift */; };
+		B2539D6D21BDE01C004CABF5 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2539D6C21BDE01C004CABF5 /* Song.swift */; };
 		B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B263E21BDB4E600F5651A /* ProfilSongController.swift */; };
 		B28B264121BDDEF500F5651A /* SongBis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B264021BDDEF500F5651A /* SongBis.swift */; };
 		B296D26821B9A52700D5CC50 /* PartitionAndNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */; };
@@ -85,12 +86,12 @@
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82EABB5221BC36F20003264C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SearchController.swift; sourceTree = "<group>"; };
+		B2539D6C21BDE01C004CABF5 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B28B263E21BDB4E600F5651A /* ProfilSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSongController.swift; sourceTree = "<group>"; };
 		B28B264021BDDEF500F5651A /* SongBis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongBis.swift; sourceTree = "<group>"; };
 		B296D26721B9A52700D5CC50 /* PartitionAndNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionAndNotesViewController.swift; sourceTree = "<group>"; };
 		B296D26921BD706200D5CC50 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B2C3A44221A3183A00607B5A /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
-		B2E8258C21A44F4200E924ED /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B2E8258E21A44FCB00E924ED /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B2E8259021A452F700E924ED /* SongPlayed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayed.swift; sourceTree = "<group>"; };
 		B2EDB41321A313700094CB44 /* SeizeTheMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeizeTheMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,13 +208,13 @@
 				82EABB5221BC36F20003264C /* SearchController.swift */,
 				0B0F0B2721B7D4FA00190F72 /* SoundController.swift */,
 				B2EDB41A21A313700094CB44 /* Main.storyboard */,
+				B2539D6C21BDE01C004CABF5 /* Song.swift */,
 				B28B263E21BDB4E600F5651A /* ProfilSongController.swift */,
 				B296D26921BD706200D5CC50 /* ResultViewController.swift */,
 				B2EDB41621A313700094CB44 /* AppDelegate.swift */,
 				B2EDB41D21A313710094CB44 /* Assets.xcassets */,
 				B2EDB41F21A313710094CB44 /* LaunchScreen.storyboard */,
 				B2EDB42221A313710094CB44 /* Info.plist */,
-				B2E8258C21A44F4200E924ED /* Song.swift */,
 				B2E8258E21A44FCB00E924ED /* Note.swift */,
 				B2E8259021A452F700E924ED /* SongPlayed.swift */,
 				0B01F7C021B56A3F003FF7A0 /* LaunchScreenController.swift */,
@@ -484,6 +485,7 @@
 				8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */,
 				0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */,
 				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
+				B2539D6D21BDE01C004CABF5 /* Song.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
 				0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */,
