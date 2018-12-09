@@ -16,33 +16,14 @@ class PartitionViewController: UIViewController {
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var end: Bool = false
-    var song: Song
-    
-    init(_ song: Song) {
-        
-        //Get all information from the segue
-        let title = ""
-        let author = ""
-        let listOfNotes: [String]
-        //Parse list of notes
-        //for 0... list.count etc... treat do octave and create note then put into tab
-        var list: [Note]
-        
-        list = nil
-        
-        self.song = Song(title, author, list)
-        
-        let instanceOfPartition = PartitionAndNotesViewController()
-        instanceOfPartition.addAllNotes(listOfNotes)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    var song: Song?
+    var listOfStringOfNotes: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let instanceOfPartition = PartitionAndNotesViewController()
+        instanceOfPartition.addAllNotes(listOfStringOfNotes!)
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
     }
@@ -86,13 +67,13 @@ class PartitionViewController: UIViewController {
         var index = 0 //initialisation de l'élément parcourant la liste de notes
         let instanceOfPartition = PartitionAndNotesViewController()
         
-        while index < song.listOfNotes.count && !end {
+        while index < song!.listOfNotes.count && !end {
             //tant que la chanson n'est pas finie
          
             if tracker.amplitude > 0.2 {//note jouée ou chantée
                 
-                if (Double(tracker.frequency) <= (song.listOfNotes[index].frequence + 0.5) &&
-                    Double(tracker.frequency) >= (song.listOfNotes[index].frequence - 0.5))
+                if (Double(tracker.frequency) <= (song!.listOfNotes[index].frequence + 0.5) &&
+                    Double(tracker.frequency) >= (song!.listOfNotes[index].frequence - 0.5))
                     //comparaison note jouée et note attendue
                     //on laisse un intervalle plus large pour les différents accordages
                     //en fonction des instruments

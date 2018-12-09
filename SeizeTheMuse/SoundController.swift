@@ -30,72 +30,53 @@ class SoundController: UIViewController {
 
     @IBAction func btnRe3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " D3"
     }
     
     @IBAction func btnMi3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " E3"
     }
-    
     
     @IBAction func btnFa3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " F3"
     }
-    
-    
     
     @IBAction func btnSol3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " G3"
     }
-    
     
     @IBAction func btnLa3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " A3"
     }
-    
-    
     
     @IBAction func btnSi3(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " B3"
     }
-    
     
     @IBAction func btnDo4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " C4"
     }
-    
-    
-    
    
     @IBAction func btnMi4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " E4"
     }
-    
-    
-    
     
     @IBAction func btnFa4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " F4"
     }
-    
-    
-    
     
     @IBAction func btnSol4(_ sender: Any) {
         let tmp = labelsound.text
-        labelsound.text = tmp! + " Ré(3)"
+        labelsound.text = tmp! + " G4"
     }
-    
-    
-    
     
     private func SetLabel(){
         labelsound.layer.borderWidth = 1
