@@ -20,7 +20,6 @@
 		8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFD21AD5DB600058C3F /* SubscribeController.swift */; };
 		8241F00221AD5DB600058C3F /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EFFE21AD5DB600058C3F /* ProfilController.swift */; };
 		82BF356C21BD32A000FB1984 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF356B21BD32A000FB1984 /* Song.swift */; };
-		82BF356E21BDA25700FB1984 /* ProfilSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BF356D21BDA25700FB1984 /* ProfilSongController.swift */; };
 		82D9198A21B6925D008A0154 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D9198921B6925D008A0154 /* GoogleService-Info.plist */; };
 		82EABB5321BC36F20003264C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EABB5221BC36F20003264C /* SearchController.swift */; };
 		B28B263F21BDB4E600F5651A /* ProfilSongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B263E21BDB4E600F5651A /* ProfilSongController.swift */; };
@@ -85,7 +84,6 @@
 		8241EFFD21AD5DB600058C3F /* SubscribeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		8241EFFE21AD5DB600058C3F /* ProfilController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
 		82BF356B21BD32A000FB1984 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		82BF356D21BDA25700FB1984 /* ProfilSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSongController.swift; sourceTree = "<group>"; };
 		82D9198921B6925D008A0154 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82EABB5221BC36F20003264C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SearchController.swift; sourceTree = "<group>"; };
 		B28B263E21BDB4E600F5651A /* ProfilSongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSongController.swift; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 				8241EFFE21AD5DB600058C3F /* ProfilController.swift */,
 				8241EFFD21AD5DB600058C3F /* SubscribeController.swift */,
 				82EABB5221BC36F20003264C /* SearchController.swift */,
-				82BF356D21BDA25700FB1984 /* ProfilSongController.swift */,
 				0B0F0B2721B7D4FA00190F72 /* SoundController.swift */,
 				B2EDB41A21A313700094CB44 /* Main.storyboard */,
 				B28B263E21BDB4E600F5651A /* ProfilSongController.swift */,
@@ -487,7 +484,6 @@
 				0B01F7C121B56A3F003FF7A0 /* LaunchScreenController.swift in Sources */,
 				8241F00121AD5DB600058C3F /* SubscribeController.swift in Sources */,
 				B2E8259121A452F700E924ED /* SongPlayed.swift in Sources */,
-				82BF356E21BDA25700FB1984 /* ProfilSongController.swift in Sources */,
 				B2EDB41721A313700094CB44 /* AppDelegate.swift in Sources */,
 				0445C9DC21B6BF4900697D09 /* PartitionViewController.swift in Sources */,
 				82BF356C21BD32A000FB1984 /* Song.swift in Sources */,
