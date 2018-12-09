@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -617,21 +617,35 @@
             </objects>
             <point key="canvasLocation" x="2463" y="-258"/>
         </scene>
-        <!--View Controller-->
+        <!--Partition View Controller-->
         <scene sceneID="Xby-At-kw3">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="bcc-MZ-5IP" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="bcc-MZ-5IP" customClass="PartitionViewController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hiG-ai-2sK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4h-nc-31h">
+                                <rect key="frame" x="50" y="100" width="275" height="487"/>
+                                <connections>
+                                    <segue destination="k3W-ZV-bOk" kind="embed" id="YVS-1d-t3w"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NSc-d3-MfI" firstAttribute="bottom" secondItem="Q4h-nc-31h" secondAttribute="bottom" constant="80" id="1pI-2v-Xwp"/>
+                            <constraint firstItem="Q4h-nc-31h" firstAttribute="leading" secondItem="NSc-d3-MfI" secondAttribute="leading" constant="50" id="JPu-c3-w4e"/>
+                            <constraint firstItem="NSc-d3-MfI" firstAttribute="trailing" secondItem="Q4h-nc-31h" secondAttribute="trailing" constant="50" id="V1G-vG-6Kp"/>
+                            <constraint firstItem="Q4h-nc-31h" firstAttribute="top" secondItem="NSc-d3-MfI" secondAttribute="top" constant="80" id="qba-yV-igR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NSc-d3-MfI"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-KW-0Q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="554"/>
+            <point key="canvasLocation" x="2505" y="698"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FBo-u0-Dd8">
@@ -1013,9 +1027,26 @@
             </objects>
             <point key="canvasLocation" x="1448.8" y="-341.37931034482762"/>
         </scene>
+        <!--Partition And Notes View Controller-->
+        <scene sceneID="QmG-yl-fvX">
+            <objects>
+                <viewController id="k3W-ZV-bOk" customClass="PartitionAndNotesViewController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAN-Cd-hpV">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zMF-v9-q6G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9np-Om-sEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2138" y="1758"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7g-2E-lG4"/>
         <segue reference="YkC-Ee-vcK"/>
+        <segue reference="rEf-5B-h5Y"/>
+        <segue reference="MFa-a7-b61"/>
     </inferredMetricsTieBreakers>
 </document>
