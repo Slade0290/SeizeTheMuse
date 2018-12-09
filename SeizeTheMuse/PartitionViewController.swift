@@ -94,4 +94,10 @@ class PartitionViewController: UIViewController {
         
         self.navigationController!.pushViewController(secondViewController, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultVC: ResultViewController = segue.destination as! ResultViewController
+        resultVC.goodNotes.text = String(song!.listOfNotes.count)
+        resultVC.achievement.text = "100%"
+    }
 }
