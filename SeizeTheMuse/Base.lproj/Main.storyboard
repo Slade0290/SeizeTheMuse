@@ -542,6 +542,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Imn-lE-fC3"/>
                     </view>
+                    <connections>
+                        <outlet property="AuthorText" destination="zVd-5B-OnO" id="VaC-bA-uds"/>
+                        <outlet property="Currenty" destination="M3j-1q-ITl" id="ZWf-9w-ymx"/>
+                        <outlet property="DateText" destination="kxn-HS-KOB" id="DsG-Tc-nwI"/>
+                        <outlet property="DurationText" destination="mqz-5F-DOx" id="fTh-Rg-uOE"/>
+                        <outlet property="NbrPlayed" destination="yGh-DE-n4y" id="xbx-FD-KSJ"/>
+                        <outlet property="TitleText" destination="gIh-6R-7ww" id="whr-0r-mYc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVm-gU-Jfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -755,10 +763,10 @@
             </objects>
             <point key="canvasLocation" x="3742" y="732"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Controller-->
         <scene sceneID="1xR-ZJ-QLQ">
             <objects>
-                <viewController id="fEs-KE-Hv5" sceneMemberID="viewController">
+                <viewController id="fEs-KE-Hv5" customClass="SearchController" customModule="SeizeTheMuse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qzQ-Bq-7VQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -775,10 +783,27 @@
                                 <color key="sectionIndexColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="LtJ-fO-duA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LtJ-fO-duA" id="mz9-1b-3fS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fEs-KE-Hv5" id="uVD-JI-ufM"/>
+                                    <outlet property="delegate" destination="fEs-KE-Hv5" id="c4k-WD-lUV"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-73-mvh">
                                 <rect key="frame" x="0.0" y="89" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fEs-KE-Hv5" id="leS-Pu-hZ3"/>
+                                </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-GI-beg">
                                 <rect key="frame" x="16" y="26" width="30" height="29.5"/>
@@ -823,6 +848,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ldD-8q-1pg"/>
                     </view>
+                    <connections>
+                        <outlet property="SearchBar" destination="2Xd-73-mvh" id="nrE-b2-Sjd"/>
+                        <outlet property="TableSound" destination="Pgm-Oe-ZQX" id="Rdg-47-zf7"/>
+                        <segue destination="9JB-vJ-tFs" kind="show" identifier="GoToProfilSong" id="350-H0-aiU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuF-kc-WFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
