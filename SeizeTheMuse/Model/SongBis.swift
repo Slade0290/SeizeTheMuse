@@ -12,7 +12,7 @@ class SongBis: NSObject {
     var title: String?
     var author: String?
     var son: String?
-    var date: Date?
+    var date: String?
     var difficulty: String?
     
 }

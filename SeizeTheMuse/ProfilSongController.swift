@@ -15,10 +15,8 @@ class ProfilSongController: UIViewController {
 
     @IBOutlet weak var TitleText: UILabel!
     @IBOutlet weak var AuthorText: UILabel!
-    @IBOutlet weak var DurationText: UILabel!
+    @IBOutlet weak var Difficulty: UILabel!
     @IBOutlet weak var DateText: UILabel!
-    @IBOutlet weak var NbrPlayed: UILabel!
-    @IBOutlet weak var Currenty: UILabel!
 
     var author: String = ""
     var son: String = ""
@@ -32,6 +30,8 @@ class ProfilSongController: UIViewController {
         TitleText.text = son.title
         AuthorText.text = son.author
         self.son = son.son!
+        Difficulty.text = son.difficulty
+        DateText.text = son.date
         
         // Do any additional setup after loading the view.
         
