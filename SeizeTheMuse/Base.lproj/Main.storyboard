@@ -413,20 +413,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-BZ-nw1">
-                                <rect key="frame" x="16" y="36" width="30" height="29.5"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Back">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-6R-7ww">
                                 <rect key="frame" x="167" y="85" width="41" height="28.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
@@ -493,14 +479,23 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="bcc-MZ-5IP" kind="show" id="jTT-KQ-NBr"/>
+                                    <segue destination="bcc-MZ-5IP" kind="show" identifier="GoToPartition" id="jTT-KQ-NBr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-A6-ZAE">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fEs-KE-Hv5" kind="show" identifier="BackToSearch" id="2Hv-lg-BAv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xqM-vE-tQz" firstAttribute="leading" secondItem="xmH-RL-Qn9" secondAttribute="trailing" constant="65" id="7AV-C4-Oc0"/>
-                            <constraint firstItem="nrr-BZ-nw1" firstAttribute="top" secondItem="Imn-lE-fC3" secondAttribute="top" constant="16" id="Cee-bv-bDA"/>
                             <constraint firstItem="gIh-6R-7ww" firstAttribute="top" secondItem="Imn-lE-fC3" secondAttribute="top" constant="65" id="Eiw-df-8TP"/>
                             <constraint firstItem="kPX-uS-8be" firstAttribute="centerX" secondItem="Aj7-8e-sxd" secondAttribute="centerX" id="EwV-ag-D41"/>
                             <constraint firstItem="xqM-vE-tQz" firstAttribute="top" secondItem="Imn-lE-fC3" secondAttribute="top" priority="750" constant="210" id="Voo-Nw-qhD"/>
@@ -508,7 +503,6 @@
                             <constraint firstItem="xmH-RL-Qn9" firstAttribute="top" secondItem="Imn-lE-fC3" secondAttribute="top" priority="750" constant="210" id="co3-eY-7vU"/>
                             <constraint firstItem="xmH-RL-Qn9" firstAttribute="leading" secondItem="Imn-lE-fC3" secondAttribute="leading" constant="16" id="dVg-fZ-ZQT"/>
                             <constraint firstItem="Imn-lE-fC3" firstAttribute="bottom" secondItem="kPX-uS-8be" secondAttribute="bottom" constant="70" id="eMg-AA-MrH"/>
-                            <constraint firstItem="nrr-BZ-nw1" firstAttribute="leading" secondItem="Imn-lE-fC3" secondAttribute="leading" constant="16" id="w0b-yh-XCT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Imn-lE-fC3"/>
                     </view>
@@ -1090,8 +1084,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="2Hv-lg-BAv"/>
         <segue reference="rEf-5B-h5Y"/>
-        <segue reference="RSP-Xk-yJ8"/>
+        <segue reference="MFa-a7-b61"/>
         <segue reference="RN1-Dh-Jyc"/>
     </inferredMetricsTieBreakers>
 </document>

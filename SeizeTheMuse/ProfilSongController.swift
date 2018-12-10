@@ -29,15 +29,18 @@ class ProfilSongController: UIViewController {
         let son:SongBis = songs[myIndex]
         TitleText.text = son.title
         AuthorText.text = son.author
-        self.son = son.son!
         Difficulty.text = son.difficulty
         DateText.text = son.date
+        self.son = son.son!
         
         // Do any additional setup after loading the view.
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToPartition"{
+            
+        
         let partitionVC: PartitionViewController = segue.destination as! PartitionViewController
         
         var list = [Note]()
@@ -82,20 +85,12 @@ class ProfilSongController: UIViewController {
                 list.append(tmpNote)
                 listOfNotes.append(note)
             }
+            
         }
         print(list)
         let currentSong = Song(songTitle, author, list)
         partitionVC.song = currentSong
         partitionVC.listOfStringOfNotes = listOfNotes
+        }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

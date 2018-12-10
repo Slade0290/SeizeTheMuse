@@ -40,6 +40,8 @@ class SearchController: UIViewController {
                 song.author = dictionary["author"] as? String
                 song.title = dictionary["title"] as? String
                 song.son = dictionary["son"] as? String
+                song.date = dictionary["date"] as? String
+                song.difficulty = dictionary["difficulty"] as? String
                 songs.append(song)
                 self.TableSound.reloadData()
             }
