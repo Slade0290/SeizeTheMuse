@@ -48,8 +48,8 @@ class ProfilSongController: UIViewController {
             let note: String = tabNotes[i]
             let name = note.first
             var octave = 0
-            if let tryOctave = Int(String(note.last!)) {
-                octave = tryOctave
+            if let tryOctave = String(note.last!) {
+                octave = Int(tryOctave)
             } else {
                 // Octave par défaut
                 octave = 3
