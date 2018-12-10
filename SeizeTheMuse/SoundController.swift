@@ -93,6 +93,11 @@ class SoundController: UIViewController {
         labelsound.text = tmp! + " G4"
     }
     
+    @IBAction func btnRe4(_ sender: Any) {
+        let tmp = labelsound.text
+        labelsound.text = tmp! + " D4"
+    }
+    
     private func SetLabel(){
         labelsound.layer.borderWidth = 1
         labelsound.layer.borderColor = UIColor.white.cgColor
