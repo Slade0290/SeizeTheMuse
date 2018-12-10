@@ -13,6 +13,10 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var goodNotes: UILabel!
     @IBOutlet weak var achievement: UILabel!
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

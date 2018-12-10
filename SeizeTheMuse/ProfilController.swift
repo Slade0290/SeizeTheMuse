@@ -15,6 +15,9 @@ class ProfilController: UIViewController {
     @IBOutlet weak var PseudoAfficher: UILabel!
     @IBOutlet weak var EmailAfficher: UILabel!
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
     override var preferredStatusBarStyle: UIStatusBarStyle
     {
         return .lightContent

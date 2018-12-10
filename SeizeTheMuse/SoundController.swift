@@ -20,6 +20,10 @@ class SoundController: UIViewController {
         SetTextFields()
     }
   
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+  
     override var preferredStatusBarStyle: UIStatusBarStyle
     {
         return .lightContent

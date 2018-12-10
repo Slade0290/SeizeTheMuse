@@ -15,6 +15,10 @@ class LoginController: UIViewController {
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle
     {
         return .lightContent
