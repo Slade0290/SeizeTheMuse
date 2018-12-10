@@ -919,7 +919,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnRE:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="g2L-xT-5Ct"/>
                                                     <action selector="btnRe3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="3XN-VI-a3z"/>
                                                 </connections>
                                             </button>
@@ -930,7 +929,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnMI:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="yns-MN-MeG"/>
                                                     <action selector="btnMi3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="beK-H9-idJ"/>
                                                 </connections>
                                             </button>
@@ -941,7 +939,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnFA:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="Jps-Uv-BuF"/>
                                                     <action selector="btnFa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="Zrf-dW-WR1"/>
                                                 </connections>
                                             </button>
@@ -953,7 +950,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="btnFa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="otP-cY-4mu"/>
-                                                    <action selector="btnSOL:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="VdJ-RI-tFu"/>
                                                     <action selector="btnSol3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="pk2-A5-5tZ"/>
                                                 </connections>
                                             </button>
@@ -964,7 +960,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnLA:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="ugF-sN-WHd"/>
                                                     <action selector="btnLa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="44V-7c-EcB"/>
                                                 </connections>
                                             </button>
@@ -975,7 +970,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnSI:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="fvG-hR-UHo"/>
                                                     <action selector="btnSi3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="unt-Lb-RHc"/>
                                                 </connections>
                                             </button>
@@ -992,7 +986,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="Do4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="GIs-1o-Lrq"/>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="FTh-G6-XQu"/>
                                                     <action selector="btnDo4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="cuV-g5-Oq6"/>
                                                 </connections>
                                             </button>
@@ -1003,7 +996,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="AXq-nd-lA7"/>
                                                     <action selector="btnRe4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="60v-AU-q9H"/>
                                                 </connections>
                                             </button>
@@ -1014,7 +1006,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="aDp-ca-ZZT"/>
                                                     <action selector="btnMi4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="WuU-jR-TEr"/>
                                                 </connections>
                                             </button>
@@ -1025,7 +1016,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="kUS-8p-aAp"/>
                                                     <action selector="btnFa4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="HnV-zm-ehA"/>
                                                 </connections>
                                             </button>
@@ -1036,7 +1026,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="xGA-Gk-8fD"/>
                                                     <action selector="btnSol4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="cyI-WC-02A"/>
                                                 </connections>
                                             </button>
