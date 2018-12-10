@@ -45,7 +45,6 @@ class PartitionAndNotesViewController: UIViewController {
         }
     }
     
-    
     // Animation of the notes
     public func animation() {
         UIView.animate(withDuration: 1, animations: {

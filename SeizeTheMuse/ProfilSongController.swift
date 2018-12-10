@@ -31,6 +31,11 @@ class ProfilSongController: UIViewController {
         AuthorText.text = son.author
         Difficulty.text = son.difficulty
         DateText.text = son.date
+        print("========================================")
+        print("========================================")
+        print(son.son!)
+        print("========================================")
+        print("========================================")
         self.son = son.son!
         
         // Do any additional setup after loading the view.
