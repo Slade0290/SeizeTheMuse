@@ -1057,15 +1057,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-gR-ssk">
-                                <rect key="frame" x="110" y="226" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-gR-ssk">
+                                <rect key="frame" x="128" y="226" width="231" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Easy"/>
                                     <segment title="Medium"/>
                                     <segment title="Hard"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="Difficulty:" destination="VGZ-lT-r2F" eventType="valueChanged" id="OfQ-WH-JTW"/>
                                     <action selector="segmentedValue:" destination="VGZ-lT-r2F" eventType="valueChanged" id="s6i-eh-b5w"/>
@@ -1077,10 +1077,13 @@
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="gGm-BE-7GT" secondAttribute="trailing" constant="20" id="2bW-xt-3fj"/>
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="ixP-08-gG6" secondAttribute="trailing" constant="16" id="4bQ-IL-58f"/>
                             <constraint firstItem="gGm-BE-7GT" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" constant="-2" id="6bx-gL-UPL"/>
+                            <constraint firstItem="lRW-gR-ssk" firstAttribute="leading" secondItem="Kvm-zN-k84" secondAttribute="trailing" constant="32" id="B5Y-Ys-fcW"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="leading" secondItem="Lgl-BV-m4h" secondAttribute="trailing" constant="16" id="KmE-JS-Pgj"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="top" secondItem="VOQ-K8-YlR" secondAttribute="top" constant="30" id="LKp-Or-xHD"/>
                             <constraint firstItem="KVr-m5-WIf" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="OP9-E8-md2"/>
+                            <constraint firstItem="lRW-gR-ssk" firstAttribute="top" secondItem="ixP-08-gG6" secondAttribute="bottom" constant="32" id="PCD-v3-hvD"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="Qh6-C9-D2z"/>
+                            <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="lRW-gR-ssk" secondAttribute="trailing" constant="16" id="RRV-eZ-WtC"/>
                             <constraint firstItem="Lgl-BV-m4h" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="62" id="TZs-F3-ghR"/>
                             <constraint firstItem="Kvm-zN-k84" firstAttribute="top" secondItem="Lgl-BV-m4h" secondAttribute="bottom" constant="41" id="ZjO-Rq-Xq1"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="57" id="ciL-Oh-DN5"/>
