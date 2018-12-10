@@ -874,6 +874,7 @@
                                 </state>
                                 <connections>
                                     <action selector="CreateSongDb:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="r6I-mn-Vdm"/>
+                                    <segue destination="t6Z-hS-7YJ" kind="show" identifier="backfromCS" id="w1a-QG-9MA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-BV-m4h">
@@ -1093,7 +1094,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnu-iR-jqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448.8" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="1396" y="-22"/>
         </scene>
         <!--Partition And Notes View Controller-->
         <scene sceneID="QmG-yl-fvX">
@@ -1113,7 +1114,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7g-2E-lG4"/>
-        <segue reference="YkC-Ee-vcK"/>
-        <segue reference="2cW-9V-Bap"/>
+        <segue reference="w1a-QG-9MA"/>
+        <segue reference="RN1-Dh-Jyc"/>
     </inferredMetricsTieBreakers>
 </document>
