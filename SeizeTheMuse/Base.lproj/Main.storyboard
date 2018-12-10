@@ -325,46 +325,30 @@
                                     <action selector="GoToCreateSong:" destination="t6Z-hS-7YJ" eventType="touchUpInside" id="pEE-RB-SFM"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-Vl-UIP">
-                                <rect key="frame" x="64" y="281.5" width="247" height="21.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXk-KH-rhh">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="21.5"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Email :">
-                                                <attributes>
-                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelemail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzL-Sl-GR0">
-                                        <rect key="frame" x="167.5" y="0.0" width="79.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="iI8-BE-cOm">
-                                <rect key="frame" x="64" y="252" width="247" height="20.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pseudo :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INb-CW-PQ7">
-                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelpseudo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-zg-MWb">
-                                        <rect key="frame" x="160.5" y="0.0" width="86.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXk-KH-rhh">
+                                <rect key="frame" x="162" y="296" width="51.5" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Email :">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pseudo :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INb-CW-PQ7">
+                                <rect key="frame" x="154" y="224" width="67.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelpseudo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-zg-MWb">
+                                <rect key="frame" x="144.5" y="252" width="86.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Im6-hr-dzz">
                                 <rect key="frame" x="16" y="28" width="46" height="29.5"/>
                                 <state key="normal">
@@ -383,21 +367,31 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" identifier="logout" id="2cW-9V-Bap"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelemail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzL-Sl-GR0">
+                                <rect key="frame" x="148" y="324" width="79.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="INb-CW-PQ7" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="3GJ-A3-5is"/>
                             <constraint firstItem="7W7-Qc-p6a" firstAttribute="top" secondItem="QKc-jj-Rpp" secondAttribute="bottom" constant="18.5" id="3hI-fk-l0A"/>
-                            <constraint firstItem="bJK-Vl-UIP" firstAttribute="top" secondItem="iI8-BE-cOm" secondAttribute="bottom" constant="9" id="L74-HD-Zqt"/>
+                            <constraint firstItem="qfx-zg-MWb" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="43D-m9-qii"/>
+                            <constraint firstItem="qfx-zg-MWb" firstAttribute="top" secondItem="INb-CW-PQ7" secondAttribute="bottom" constant="8" id="GDH-kD-nqz"/>
+                            <constraint firstItem="INb-CW-PQ7" firstAttribute="top" secondItem="F45-AW-h9H" secondAttribute="bottom" constant="102" id="Lde-wT-a6b"/>
+                            <constraint firstItem="VXk-KH-rhh" firstAttribute="top" secondItem="qfx-zg-MWb" secondAttribute="bottom" constant="23.5" id="NbG-LK-576"/>
                             <constraint firstItem="Im6-hr-dzz" firstAttribute="leading" secondItem="Alt-XS-sV7" secondAttribute="leading" constant="16" id="ODC-vA-UxV"/>
-                            <constraint firstItem="bJK-Vl-UIP" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="QYW-Oy-6aT"/>
                             <constraint firstItem="7W7-Qc-p6a" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="UAe-e2-Iwe"/>
                             <constraint firstItem="Im6-hr-dzz" firstAttribute="top" secondItem="Alt-XS-sV7" secondAttribute="top" constant="8" id="V6E-N4-NnL"/>
                             <constraint firstItem="F45-AW-h9H" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="ZJF-06-GIC"/>
+                            <constraint firstItem="VXk-KH-rhh" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="akX-xB-WXu"/>
                             <constraint firstItem="Alt-XS-sV7" firstAttribute="bottom" secondItem="7W7-Qc-p6a" secondAttribute="bottom" constant="78" id="bnZ-Xu-eHF"/>
-                            <constraint firstItem="iI8-BE-cOm" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="fGt-Qn-7Pa"/>
-                            <constraint firstItem="iI8-BE-cOm" firstAttribute="top" secondItem="F45-AW-h9H" secondAttribute="bottom" constant="130" id="mLY-4I-e0Z"/>
                             <constraint firstItem="F45-AW-h9H" firstAttribute="top" secondItem="Alt-XS-sV7" secondAttribute="top" constant="45" id="nEH-kX-Keg"/>
+                            <constraint firstItem="rzL-Sl-GR0" firstAttribute="top" secondItem="VXk-KH-rhh" secondAttribute="bottom" constant="8" id="nz8-yA-4e1"/>
                             <constraint firstItem="QKc-jj-Rpp" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="r4f-a6-J4M"/>
+                            <constraint firstItem="rzL-Sl-GR0" firstAttribute="centerX" secondItem="VLy-OZ-43z" secondAttribute="centerX" id="tcR-IB-D3M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Alt-XS-sV7"/>
                     </view>
@@ -925,7 +919,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnRE:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="g2L-xT-5Ct"/>
                                                     <action selector="btnRe3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="3XN-VI-a3z"/>
                                                 </connections>
                                             </button>
@@ -936,7 +929,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnMI:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="yns-MN-MeG"/>
                                                     <action selector="btnMi3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="beK-H9-idJ"/>
                                                 </connections>
                                             </button>
@@ -947,7 +939,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnFA:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="Jps-Uv-BuF"/>
                                                     <action selector="btnFa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="Zrf-dW-WR1"/>
                                                 </connections>
                                             </button>
@@ -959,7 +950,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="btnFa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="otP-cY-4mu"/>
-                                                    <action selector="btnSOL:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="VdJ-RI-tFu"/>
                                                     <action selector="btnSol3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="pk2-A5-5tZ"/>
                                                 </connections>
                                             </button>
@@ -970,7 +960,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnLA:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="ugF-sN-WHd"/>
                                                     <action selector="btnLa3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="44V-7c-EcB"/>
                                                 </connections>
                                             </button>
@@ -981,7 +970,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnSI:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="fvG-hR-UHo"/>
                                                     <action selector="btnSi3:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="unt-Lb-RHc"/>
                                                 </connections>
                                             </button>
@@ -998,7 +986,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="Do4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="GIs-1o-Lrq"/>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="FTh-G6-XQu"/>
                                                     <action selector="btnDo4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="cuV-g5-Oq6"/>
                                                 </connections>
                                             </button>
@@ -1009,7 +996,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="AXq-nd-lA7"/>
                                                     <action selector="btnRe4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="60v-AU-q9H"/>
                                                 </connections>
                                             </button>
@@ -1020,7 +1006,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="aDp-ca-ZZT"/>
                                                     <action selector="btnMi4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="WuU-jR-TEr"/>
                                                 </connections>
                                             </button>
@@ -1031,7 +1016,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="kUS-8p-aAp"/>
                                                     <action selector="btnFa4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="HnV-zm-ehA"/>
                                                 </connections>
                                             </button>
@@ -1042,7 +1026,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="btnDO:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="xGA-Gk-8fD"/>
                                                     <action selector="btnSol4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="cyI-WC-02A"/>
                                                 </connections>
                                             </button>
@@ -1063,18 +1046,17 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-gR-ssk">
-                                <rect key="frame" x="110" y="226" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-gR-ssk">
+                                <rect key="frame" x="128" y="226" width="231" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Easy"/>
                                     <segment title="Medium"/>
                                     <segment title="Hard"/>
                                 </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="Difficulty:" destination="VGZ-lT-r2F" eventType="valueChanged" id="OfQ-WH-JTW"/>
-                                    <action selector="segmentedValue:" destination="VGZ-lT-r2F" eventType="valueChanged" id="s6i-eh-b5w"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -1083,10 +1065,13 @@
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="gGm-BE-7GT" secondAttribute="trailing" constant="20" id="2bW-xt-3fj"/>
                             <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="ixP-08-gG6" secondAttribute="trailing" constant="16" id="4bQ-IL-58f"/>
                             <constraint firstItem="gGm-BE-7GT" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" constant="-2" id="6bx-gL-UPL"/>
+                            <constraint firstItem="lRW-gR-ssk" firstAttribute="leading" secondItem="Kvm-zN-k84" secondAttribute="trailing" constant="32" id="B5Y-Ys-fcW"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="leading" secondItem="Lgl-BV-m4h" secondAttribute="trailing" constant="16" id="KmE-JS-Pgj"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="top" secondItem="VOQ-K8-YlR" secondAttribute="top" constant="30" id="LKp-Or-xHD"/>
                             <constraint firstItem="KVr-m5-WIf" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="OP9-E8-md2"/>
+                            <constraint firstItem="lRW-gR-ssk" firstAttribute="top" secondItem="ixP-08-gG6" secondAttribute="bottom" constant="32" id="PCD-v3-hvD"/>
                             <constraint firstItem="D9N-aX-qKd" firstAttribute="centerX" secondItem="lKq-YT-bHH" secondAttribute="centerX" id="Qh6-C9-D2z"/>
+                            <constraint firstItem="VOQ-K8-YlR" firstAttribute="trailing" secondItem="lRW-gR-ssk" secondAttribute="trailing" constant="16" id="RRV-eZ-WtC"/>
                             <constraint firstItem="Lgl-BV-m4h" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="62" id="TZs-F3-ghR"/>
                             <constraint firstItem="Kvm-zN-k84" firstAttribute="top" secondItem="Lgl-BV-m4h" secondAttribute="bottom" constant="41" id="ZjO-Rq-Xq1"/>
                             <constraint firstItem="ixP-08-gG6" firstAttribute="top" secondItem="D9N-aX-qKd" secondAttribute="bottom" constant="57" id="ciL-Oh-DN5"/>
@@ -1129,7 +1114,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7g-2E-lG4"/>
-        <segue reference="MFa-a7-b61"/>
+        <segue reference="YkC-Ee-vcK"/>
         <segue reference="2cW-9V-Bap"/>
     </inferredMetricsTieBreakers>
 </document>
