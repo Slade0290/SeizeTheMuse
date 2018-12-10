@@ -49,7 +49,7 @@ class PartitionAndNotesViewController: UIViewController {
     // Animation of the notes
     public func animation() {
         UIView.animate(withDuration: 1, animations: {
-            for i in 0...self.imgTab.count {
+            for i in 0..<self.imgTab.count {
                 self.imgTab[i].frame.origin.x -= 50
                 self.hideNotes()
             }
