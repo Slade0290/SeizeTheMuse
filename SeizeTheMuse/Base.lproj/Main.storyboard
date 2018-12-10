@@ -985,7 +985,6 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="Do4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="GIs-1o-Lrq"/>
                                                     <action selector="btnDo4:" destination="VGZ-lT-r2F" eventType="touchUpInside" id="cuV-g5-Oq6"/>
                                                 </connections>
                                             </button>
