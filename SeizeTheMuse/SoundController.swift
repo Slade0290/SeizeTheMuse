@@ -144,6 +144,7 @@ class SoundController: UIViewController {
                 
                 ref.child("Sounds").childByAutoId().setValue(post)
                 
+                self.performSegue(withIdentifier: "backfromCS", sender: nil)
             }
         } else {
             print("Erreur : Nom du son manquant ou son manquant")
@@ -158,3 +159,4 @@ extension SoundController: UITextFieldDelegate {
         return true
     }
 }
+
