@@ -30,7 +30,7 @@ class SoundController: UIViewController {
 
     @IBOutlet weak var segmentedValue: UISegmentedControl!
     
-    @IBAction func Difficulty(_ sender: Any) {
+    @IBAction func Difficulty(_ sender: AnyObject) {
         switch segmentedValue.selectedSegmentIndex {
         case 0:
             difficulty = "Easy"
