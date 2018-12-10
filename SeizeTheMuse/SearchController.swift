@@ -24,8 +24,11 @@ class SearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchSound()
+
     }
-    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
     func fetchSound(){
         
         let ref = Database.database().reference()

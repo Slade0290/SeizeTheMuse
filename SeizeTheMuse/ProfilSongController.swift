@@ -22,6 +22,9 @@ class ProfilSongController: UIViewController {
     var son: String = ""
     var songTitle: String = ""
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

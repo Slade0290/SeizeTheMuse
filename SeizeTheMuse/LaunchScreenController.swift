@@ -9,6 +9,10 @@
 import UIKit
 
 class LaunchScreenController: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
