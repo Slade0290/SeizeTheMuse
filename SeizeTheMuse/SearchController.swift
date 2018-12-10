@@ -18,10 +18,8 @@ class SearchController: UIViewController {
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var TableSound: UITableView!
     
-
     var searchSongs = [SongBis]()
     var searching = false
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,12 +42,11 @@ class SearchController: UIViewController {
                 song.son = dictionary["son"] as? String
                 songs.append(song)
                 self.TableSound.reloadData()
-
             }
         }
-        
- }
+    }
 }
+
 extension SearchController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,9 +73,8 @@ extension SearchController: UITableViewDelegate, UITableViewDataSource {
         myIndex = indexPath.row
         performSegue(withIdentifier: "GoToProfilSong", sender: self)
     }
-   
-    
 }
+
 extension SearchController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

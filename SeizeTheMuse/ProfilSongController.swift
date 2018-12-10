@@ -31,6 +31,7 @@ class ProfilSongController: UIViewController {
         let son:SongBis = songs[myIndex]
         TitleText.text = son.title
         AuthorText.text = son.author
+        self.son = son.son!
         
         // Do any additional setup after loading the view.
         
@@ -38,31 +39,54 @@ class ProfilSongController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let partitionVC: PartitionViewController = segue.destination as! PartitionViewController
-        var list: [Note]?
-        var listOfNotes: [String]?
+        
+        var list = [Note]()
+        var listOfNotes = [String]()
+        print("--------------------------------------------")
+        print(son)
+        print(TitleText.text)
+        print(AuthorText.text)
+        print("--------------------------------------------")
         
         let spaceCount = son.filter{$0 == " "}.count
         var tabNotes = son.components(separatedBy: " ")
+        print("--------------------------------------------")
+        print(spaceCount)
+        print("--------------------------------------------")
         
         for i in 0...spaceCount {
-            let note: String = tabNotes[i]
-            let name = note.first
-            var octave = 0
-            if let tryOctave = Int(String(note.last ?? "3")) {
-                octave = tryOctave
-            } else {
-                // Octave par défaut
-                octave = 3
-            }
-            
-            let tmpNote = Note(String(name!), octave)
-            list?.append(tmpNote)
-            listOfNotes?.append(note)
-        }
+            if tabNotes[i].count != 0 {
+                let note: String = tabNotes[i]
+                print("--------------------------------------------")
+                print(tabNotes)
+                print("--------------------------------------------")
+                
+                let name = note.first
+                print("--------------------------------------------")
+                print(name)
+                print("--------------------------------------------")
+                
+                var octave = 0
+                if let tryOctave = Int(String(note.last!)) {
+                    octave = tryOctave
+                } else {
+                    // Octave par défaut
+                    octave = 3
+                }
+                
+                let tmpNote = Note(String(name!), octave)
+                print("--------------------------------------------")
+                print(tmpNote)
+                print("--------------------------------------------")
 
-        let currentSong = Song(songTitle, author, list!)
+                list.append(tmpNote)
+                listOfNotes.append(note)
+            }
+        }
+        print(list)
+        let currentSong = Song(songTitle, author, list)
         partitionVC.song = currentSong
-        partitionVC.listOfStringOfNotes = listOfNotes!
+        partitionVC.listOfStringOfNotes = listOfNotes
     }
     
     /*

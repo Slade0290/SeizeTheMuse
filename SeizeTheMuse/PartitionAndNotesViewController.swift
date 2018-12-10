@@ -31,7 +31,6 @@ class PartitionAndNotesViewController: UIViewController {
         // Do any additional setup after loading the view.
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
-        self.view.backgroundColor = UIColor.red
         drawPartition()
         addKey()
     }

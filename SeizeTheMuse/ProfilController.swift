@@ -35,8 +35,7 @@ class ProfilController: UIViewController {
                 self.PseudoAfficher.text = Pseudo
                 self.EmailAfficher.text = user.email
             }
-
-        }else{
+        } else {
             fatalError("Erreur : aucun utilisateur est connecté lors de l'affichage de l'écran d'accueil")
         }
     }

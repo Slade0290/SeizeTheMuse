@@ -664,6 +664,9 @@
                         <viewLayoutGuide key="safeArea" id="NSc-d3-MfI"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="YRx-fQ-IY5" kind="show" identifier="partToResult" id="3b9-Aj-BnH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfD-KW-0Q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
